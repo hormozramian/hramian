@@ -1,0 +1,3698 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../p201/">
+      
+      
+        <link rel="next" href="../p203/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Data Types - Hormoz Ramian</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-H3V1WV4Y35"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-H3V1WV4Y35",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-H3V1WV4Y35",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#data-types" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="Hormoz Ramian" class="md-header__button md-logo" aria-label="Hormoz Ramian" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hormoz Ramian
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Data Types
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../Research/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Research
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Teaching
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Python Programming
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../cfr/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Applied Statistical Computing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../simulator/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Financial Simulation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../cv/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CV
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="Hormoz Ramian" class="md-nav__button md-logo" aria-label="Hormoz Ramian" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Hormoz Ramian
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teaching
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Teaching
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../accfin5246/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science and Machine Learning in Finance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../accfin5014/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Asset Pricing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../accfin5277/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finance Programming in Python and Databases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bus5020.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entrepreneurial Finance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Programming
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python Programming
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../session-1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Session 1 - Foundations of Python
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Session 1 - Foundations of Python
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p101/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Foundations of Programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p102/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Language
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p103/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Development Environments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p104/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jupyter Notebook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p105/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cells and Executing Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p106/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Print Statement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p107/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setting Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p108/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mathematical Operators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p109/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Function
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p110/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p111/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Virtual Environment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p112/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p113/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p114/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Session 2 - Working with Python Data
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Session 2 - Working with Python Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p201/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variable Assignment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Types
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#glossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Glossary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-code-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python Code Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c3-numerical-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C.3 Numerical Types
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C.3 Numerical Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise-1-numerical-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 1: Numerical Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-code-examples_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python Code Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-exercise-solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample Exercise Solution
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c4-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C.4 Strings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C.4 Strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise-2-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 2: Strings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-code-examples_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python Code Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-exercise-solution_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample Exercise Solution
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c5-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C.5 Lists
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C.5 Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise-3-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 3: Lists
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-code-examples_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python Code Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-exercise-solution_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample Exercise Solution
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c6-extension-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C.6 Extension: Dictionaries
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C.6 Extension: Dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise-4-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 4: Dictionaries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-code-examples_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python Code Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparing-pythons-common-data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparing Python's Common Data Types
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p203/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Numpy, Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p204/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Numpy, Random Numbers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p205/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Numpy, Statistics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p206/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Numpy, Matrices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p207/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pandas, Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p208/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pandas, Data Examination
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p209/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pandas, DataFrame Processing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p210/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pandas, Essential Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p211/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../session-3/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Session 3 - Empirical Data Analysis
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Session 3 - Empirical Data Analysis
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-3/p301/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creating DataFrames
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-3/p302/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-3/p303/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preparing Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-3/p304/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-3/p305/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Inspection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-3/p306/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Merging Datasets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../session-4/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Session 4 - Visualising Business Data
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Session 4 - Visualising Business Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-4/p401/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Insights
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-4/p402/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualisation Matters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-4/p403/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matplotlib
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-4/p404/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trends
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-4/p405/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Breakdowns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-4/p406/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relationships and Distributions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shared/glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shared/further-reading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Further Reading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../cfr/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Applied Statistical Computing
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Applied Statistical Computing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cfr/rp1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Background
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software Environment
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Software Environment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cfr/rp2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Interface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cfr/rp3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variable Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cfr/rp4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cfr/rp5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Libraries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../simulator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Financial Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#glossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Glossary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-code-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python Code Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c3-numerical-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C.3 Numerical Types
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C.3 Numerical Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise-1-numerical-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 1: Numerical Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-code-examples_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python Code Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-exercise-solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample Exercise Solution
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c4-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C.4 Strings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C.4 Strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise-2-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 2: Strings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-code-examples_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python Code Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-exercise-solution_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample Exercise Solution
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c5-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C.5 Lists
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C.5 Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise-3-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 3: Lists
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-code-examples_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python Code Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-exercise-solution_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample Exercise Solution
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c6-extension-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C.6 Extension: Dictionaries
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C.6 Extension: Dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise-4-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 4: Dictionaries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-code-examples_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python Code Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparing-pythons-common-data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparing Python's Common Data Types
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="data-types">Data Types</h1>
+<p>Every piece of information in Python, whether it's a number, a word, or a whole collection of items, is stored as a particular <strong>data type</strong>. This section brings together several of the most important data types you'll use constantly as a Python programmer: numerical types, strings, lists, and dictionaries. By the end, you'll be comfortable creating each of these, understanding what makes them different from one another, and choosing the right one for the job at hand.</p>
+<p>This section will help you get comfortable with some of the most common variable types in Python. By the end, you'll understand what kind of information can be stored in numerical types, strings, lists, and dictionaries, and how to create, manipulate, and extract information from each of them.</p>
+<p>You'll also be able to create your own examples of integers, floats, booleans, strings, and lists, and describe their key properties. Understanding these distinctions is what allows you to choose the <em>right</em> data type for a given task, which in turn helps you write code that's cleaner, more efficient, and less prone to bugs.</p>
+<h4 id="glossary">Glossary</h4>
+<p>Throughout this section, you'll come across a handful of recurring terms. Use the table below as a quick reference whenever you're unsure of a definition.</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Type</strong> (also called a <strong>class</strong>)</td>
+<td>A blueprint for a specific kind of data that can be stored in your computer. It describes what an object <em>is</em> and what it can do.</td>
+</tr>
+<tr>
+<td><strong>Object</strong> (also called an <strong>instance</strong>)</td>
+<td>A specific, concrete example of a type that has actually been created and exists in memory. If a type is the blueprint, an object is the finished building.</td>
+</tr>
+<tr>
+<td><strong>Integer (<code>int</code>)</strong></td>
+<td>A Python type designed to store whole numbers, positive, negative, or zero, with no decimal point.</td>
+</tr>
+<tr>
+<td><strong>Float (<code>float</code>)</strong></td>
+<td>A Python type designed to store numbers that may not be whole, i.e. numbers with a decimal component.</td>
+</tr>
+<tr>
+<td><strong>String (<code>str</code>)</strong></td>
+<td>A Python type designed to store a sequence of characters, in a specified order, such as a word, sentence, or phrase.</td>
+</tr>
+<tr>
+<td><strong>Index</strong></td>
+<td>The number used to reference the position of a particular value within an ordered collection, such as a string or list.</td>
+</tr>
+<tr>
+<td><strong>List (<code>list</code>)</strong></td>
+<td>A Python type designed to store a collection of values, of any mixture of types, in a specified, changeable order.</td>
+</tr>
+</tbody>
+</table>
+<p>A quick way to see these terms in action:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># &#39;age&#39; is an object; its type (blueprint) is int</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>     <span class="c1"># &lt;class &#39;int&#39;&gt;</span>
+
+<span class="c1"># &#39;name&#39; is an object; its type is str</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Ada&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>    <span class="c1"># &lt;class &#39;str&#39;&gt;</span>
+</code></pre></div>
+<p>Let's get started. In the next activity, we learn more about types.</p>
+<h3 id="types">Types</h3>
+<p>In this activity, we take a closer look at <strong>types</strong>. In Python, every value, expression, and variable is an object, and every object is an example, or instance, of a particular type or class.</p>
+<p>It can help to think of a type as a blueprint. A blueprint doesn't just describe <em>what</em> something is, it also describes <em>how</em> Python should store the associated data in memory, and what features and behaviours any instance built from that blueprint will have. For example, every <code>int</code> object supports addition and subtraction, while every <code>str</code> object supports slicing and joining, because that's what the <code>int</code> and <code>str</code> blueprints define.</p>
+<h4 id="python-code-examples">Python Code Examples</h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># Example 1</span>
+<span class="c1"># The result of an expression is itself an object, which is an instance of some type</span>
+<span class="c1"># The &quot;type&quot; function tells us the name of that type</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">3</span><span class="p">))</span>          <span class="c1"># &lt;class &#39;int&#39;&gt;</span>
+
+<span class="c1"># Example 2</span>
+<span class="c1"># The value stored in a variable also has a type</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">1.1</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>               <span class="c1"># &lt;class &#39;float&#39;&gt;</span>
+
+<span class="c1"># Example 3</span>
+<span class="c1"># We can check the type of any value directly, not just a variable</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s2">&quot;words&quot;</span><span class="p">))</span>         <span class="c1"># &lt;class &#39;str&#39;&gt;</span>
+
+<span class="c1"># Example 4 (extra)</span>
+<span class="c1"># Even a boolean value has its own type</span>
+<span class="n">is_sunny</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">is_sunny</span><span class="p">))</span>        <span class="c1"># &lt;class &#39;bool&#39;&gt;</span>
+
+<span class="c1"># Example 5 (extra)</span>
+<span class="c1"># And so does a list, which we&#39;ll explore properly later in this section</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>       <span class="c1"># &lt;class &#39;list&#39;&gt;</span>
+</code></pre></div>
+<p>A handy habit to build early on: whenever you're unsure what kind of value you're working with, especially after a calculation or when reading in external data, just wrap it in <code>type()</code> and print the result. It's one of the fastest ways to catch a bug before it causes bigger problems further down your code.</p>
+<p>In the next activity, we look at how to identify and use numerical types.</p>
+<h3 id="c3-numerical-types">C.3 Numerical Types</h3>
+<p>Python has three built-in numeric types: <strong>integers</strong>, <strong>floats</strong>, and <strong>complex numbers</strong>. In this activity, we'll focus on integers and floats, since these are by far the two you'll use most often. For anyone curious to go further, there's also an optional extension section covering complex numbers.</p>
+<h4 id="exercise-1-numerical-types">Exercise 1: Numerical Types</h4>
+<p>In this exercise, you'll have a chance to write and test your own code. Please use Anaconda to complete the exercise.</p>
+<p>Run your code and save the file. It's also worth making a note of the steps you followed, the results you got, and any errors you encountered along the way, this kind of running log is a great habit for building your understanding over time.</p>
+<h4 id="python-code-examples_1">Python Code Examples</h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># Example 1</span>
+<span class="c1"># Integers are written and printed without a decimal point, and must be whole numbers</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>                <span class="c1"># &lt;class &#39;int&#39;&gt;</span>
+
+<span class="c1"># Example 2</span>
+<span class="c1"># Floats are written and printed with a decimal point</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mf">3.1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>                <span class="c1"># &lt;class &#39;float&#39;&gt;</span>
+
+<span class="c1"># Example 3</span>
+<span class="c1"># Floats can still represent whole numbers, as long as a decimal point is present</span>
+<span class="n">c</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.0</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>                <span class="c1"># &lt;class &#39;float&#39;&gt;</span>
+
+<span class="c1"># Example 4</span>
+<span class="c1"># Division (/) always returns a float, even when both values are integers</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">4</span> <span class="o">/</span> <span class="mi">3</span><span class="p">)</span>                  <span class="c1"># 1.3333333333333333</span>
+
+<span class="c1"># Example 5</span>
+<span class="c1"># Adding two integers returns an integer</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>                  <span class="c1"># 3</span>
+
+<span class="c1"># Example 6</span>
+<span class="c1"># Adding two floats returns a float</span>
+<span class="nb">print</span><span class="p">(</span><span class="mf">3.0</span> <span class="o">+</span> <span class="mf">1.0</span><span class="p">)</span>              <span class="c1"># 4.0</span>
+
+<span class="c1"># Example 7</span>
+<span class="c1"># Mixing an int and a float in an operation returns a float</span>
+<span class="c1"># Python automatically &quot;upgrades&quot; the result so no precision is lost</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mf">1.5</span><span class="p">)</span>                <span class="c1"># 3.5</span>
+
+<span class="c1"># Example 8</span>
+<span class="c1"># The float() function converts a value into a float</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>               <span class="c1"># 5.0</span>
+
+<span class="c1"># Example 9</span>
+<span class="c1"># The int() function converts a value to an integer by rounding toward zero</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mf">2.6</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">d</span><span class="p">))</span>                 <span class="c1"># 2 (not 3! int() truncates, it does not round)</span>
+
+<span class="c1"># Example 10</span>
+<span class="c1"># Calling a function on a variable does not change the variable&#39;s own stored value</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>                      <span class="c1"># 2.6, unchanged</span>
+
+<span class="c1"># Example 11</span>
+<span class="c1"># The round() function rounds to the nearest whole number (unlike int(), which truncates)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">d</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>           <span class="c1"># 4</span>
+
+<span class="c1"># Example 12 (extra)</span>
+<span class="c1"># round() can also round to a set number of decimal places, using a second argument</span>
+<span class="n">pi_estimate</span> <span class="o">=</span> <span class="mf">3.14159</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">pi_estimate</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>  <span class="c1"># 3.14</span>
+
+<span class="c1"># Example 13 (extra)</span>
+<span class="c1"># Common arithmetic operators: + - * / // % **</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">7</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>                 <span class="c1"># 3   (floor division: divides then rounds down)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">7</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span>                  <span class="c1"># 1   (modulo: returns the remainder)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span><span class="p">)</span>                 <span class="c1"># 8   (exponentiation: 2 to the power of 3)</span>
+</code></pre></div>
+<p>A quick warning worth flagging early: <code>int()</code> and <code>round()</code> behave differently, and mixing them up is a very common source of small bugs. <code>int(2.6)</code> gives <code>2</code> (it simply chops off everything after the decimal point), whereas <code>round(2.6)</code> gives <code>3</code> (it rounds to the nearest whole number). Keep this distinction in mind whenever precise rounding matters, for example, when working with money.</p>
+<h4 id="sample-exercise-solution">Sample Exercise Solution</h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># Solution Cell 1</span>
+<span class="c1"># Specify my_number. Set the value to -3.6 for the last part of the exercise</span>
+<span class="n">my_number</span> <span class="o">=</span> <span class="mf">10.8</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_number</span><span class="p">)</span>
+
+<span class="c1"># Use the int function to create round_down</span>
+<span class="n">round_down</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">my_number</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">round_down</span><span class="p">)</span>             <span class="c1"># 10, truncated toward zero</span>
+
+<span class="c1"># Use the round function to round to the nearest integer</span>
+<span class="n">round_nearest</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">my_number</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">round_nearest</span><span class="p">)</span>          <span class="c1"># 11, rounded to the nearest whole number</span>
+
+<span class="c1"># Use the float function to make a float from round_nearest</span>
+<span class="n">new_float</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">round_nearest</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_float</span><span class="p">)</span>              <span class="c1"># 11.0</span>
+</code></pre></div>
+<p><strong>Try it yourself:</strong> rerun the solution above using <code>my_number = -3.6</code> instead. Notice how <code>int(-3.6)</code> behaves, does it round toward zero, or away from it? Comparing the two cases is a great way to build intuition for how truncation works with negative numbers.</p>
+<p>In the next activity, we look at what a string is and how to use it within Jupyter Notebooks.</p>
+<h3 id="c4-strings">C.4 Strings</h3>
+<p>A <strong>string</strong> is a sequence of characters, letters, numbers, spaces, punctuation, essentially any text. In this activity, we explore strings in more detail, including how they can be created, stored, manipulated, and accessed in Python.</p>
+<h4 id="exercise-2-strings">Exercise 2: Strings</h4>
+<p>In this exercise, you'll have a chance to write and test your own code. Please use Anaconda to complete the exercise.</p>
+<p>Run your code and save the file. It's worth noting down the steps you followed, the results you had, and any errors you ran into.</p>
+<h4 id="python-code-examples_2">Python Code Examples</h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># Example 1</span>
+<span class="n">string1</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>
+<span class="n">string2</span> <span class="o">=</span> <span class="s2">&quot;is my favourite language&quot;</span>
+
+<span class="c1"># Indexing: square brackets with a single number select one character</span>
+<span class="c1"># Negative indices count backwards from the end of the string</span>
+<span class="n">first_string</span> <span class="o">=</span> <span class="n">string1</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">first_string</span><span class="p">)</span>           <span class="c1"># &quot;h&quot; (the 3rd character from the end)</span>
+
+<span class="c1"># Slicing: [start:stop:step] selects a range of characters</span>
+<span class="c1"># Starts at index 1, stops before index 10, taking every 3rd character</span>
+<span class="n">second_string</span> <span class="o">=</span> <span class="n">string2</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">second_string</span><span class="p">)</span>
+
+<span class="c1"># Slicing with an empty start: samples from the very beginning</span>
+<span class="c1"># Stops before index 3, taking every character (step defaults to 1)</span>
+<span class="n">third_string</span> <span class="o">=</span> <span class="n">string2</span><span class="p">[:</span><span class="mi">3</span><span class="p">:]</span> <span class="o">+</span> <span class="n">string1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">third_string</span><span class="p">)</span>
+
+<span class="c1"># len() tells us how many characters are in a string</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">third_string</span><span class="p">))</span>
+
+<span class="c1"># Example 2 (extra)</span>
+<span class="c1"># Strings can be repeated using the multiplication operator</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ab&quot;</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>                <span class="c1"># &quot;ababab&quot;</span>
+
+<span class="c1"># Example 3 (extra)</span>
+<span class="c1"># Common string methods are extremely useful in practice</span>
+<span class="n">greeting</span> <span class="o">=</span> <span class="s2">&quot;  Hello, World!  &quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">greeting</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>         <span class="c1"># removes leading/trailing whitespace: &quot;Hello, World!&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">greeting</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>         <span class="c1"># &quot;  HELLO, WORLD!  &quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">greeting</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>         <span class="c1"># &quot;  hello, world!  &quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">greeting</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">,</span> <span class="s2">&quot;Python&quot;</span><span class="p">))</span>  <span class="c1"># &quot;Hello, Python!&quot;</span>
+
+<span class="c1"># Example 4 (extra)</span>
+<span class="c1"># f-strings are a clean, modern way to build strings that include variable values</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Ada&quot;</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old.&quot;</span><span class="p">)</span>   <span class="c1"># &quot;Ada is 30 years old.&quot;</span>
+</code></pre></div>
+<h4 id="sample-exercise-solution_1">Sample Exercise Solution</h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># Solution Cell 1</span>
+<span class="n">string1</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>
+<span class="n">string2</span> <span class="o">=</span> <span class="s2">&quot;is my favourite language&quot;</span>
+
+<span class="c1"># The third character from the end of the string is selected</span>
+<span class="n">first_string</span> <span class="o">=</span> <span class="n">string1</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">first_string</span><span class="p">)</span>
+
+<span class="c1"># Every third character beginning with the second character (index 1) is returned</span>
+<span class="c1"># Sampling stops just before the character with index 10 (the &quot;u&quot;)</span>
+<span class="n">second_string</span> <span class="o">=</span> <span class="n">string2</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">second_string</span><span class="p">)</span>
+
+<span class="c1"># The sampled range runs from the start of the string until just before index 3</span>
+<span class="c1"># Every character in that range is included</span>
+<span class="n">third_string</span> <span class="o">=</span> <span class="n">string2</span><span class="p">[:</span><span class="mi">3</span><span class="p">:]</span> <span class="o">+</span> <span class="n">string1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">third_string</span><span class="p">)</span>
+
+<span class="c1"># There are nine characters in the combined string (including the space)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">third_string</span><span class="p">))</span>
+
+<span class="c1"># Solution Cell 2</span>
+<span class="c1"># Create the string to work with</span>
+<span class="n">my_string</span> <span class="o">=</span> <span class="s2">&quot;Python is fun&quot;</span>
+
+<span class="c1"># Solution Cell 3</span>
+<span class="c1"># The first character has index zero</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_string</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># Solution Cell 4</span>
+<span class="c1"># Leaving the start value blank means we sample from the beginning of the string</span>
+<span class="c1"># A stop value of 3 means the sampled range covers indices 0, 1, 2</span>
+<span class="c1"># Leaving out the step value means every character in that range is included</span>
+<span class="n">start_string</span> <span class="o">=</span> <span class="n">my_string</span><span class="p">[:</span><span class="mi">3</span><span class="p">:]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">start_string</span><span class="p">)</span>
+
+<span class="c1"># Solution Cell 5</span>
+<span class="c1"># A start value of -3 means sampling begins three characters from the end</span>
+<span class="c1"># Leaving the stop value blank means sampling continues until the end of the string</span>
+<span class="c1"># Leaving the step blank means every character in that range is included</span>
+<span class="n">end_string</span> <span class="o">=</span> <span class="n">my_string</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">::]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">end_string</span><span class="p">)</span>
+
+<span class="c1"># Solution Cell 6</span>
+<span class="c1"># The two strings are joined together using the concatenation operator (+)</span>
+<span class="n">joined_string</span> <span class="o">=</span> <span class="n">start_string</span> <span class="o">+</span> <span class="n">end_string</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">joined_string</span><span class="p">)</span>
+
+<span class="c1"># Solution Cell 7</span>
+<span class="c1"># A start value of 1 means the first character returned is the second character overall</span>
+<span class="c1"># Leaving the stop value blank means sampling runs to the end of the string</span>
+<span class="c1"># A step of 2 means every other character in that range is sampled</span>
+<span class="n">alternating_string</span> <span class="o">=</span> <span class="n">my_string</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">alternating_string</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>A note on indexing:</strong> if you're new to programming, Python's indexing can feel unintuitive at first, counting starts at <code>0</code>, not <code>1</code>. So in <code>"Python"</code>, the letter <code>"P"</code> is at index <code>0</code>, and <code>"n"</code> is at index <code>5</code>. Spending a few minutes deliberately experimenting with slices in a notebook cell is one of the best ways to make this click.</p>
+<p>In the next activity, we look at how to identify and use lists.</p>
+<h3 id="c5-lists">C.5 Lists</h3>
+<p>In this activity, we turn to <strong>lists</strong>, another fundamental type in Python. Like a string, a list is a <em>sequence</em>, meaning it's an ordered collection of values. Unlike a string, however, a list can hold values of any type, and even a mixture of different types together, and its contents can be changed after creation.</p>
+<h4 id="exercise-3-lists">Exercise 3: Lists</h4>
+<p>In this exercise, you'll have a chance to write and test your own code. Please use Anaconda to complete the exercise.</p>
+<p>Run your code and save the file. As before, it's worth keeping notes on the steps you followed, your results, and any errors along the way.</p>
+<h4 id="python-code-examples_3">Python Code Examples</h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># Example 1</span>
+<span class="c1"># Create an empty list using square brackets</span>
+<span class="n">new_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_list</span><span class="p">)</span>                <span class="c1"># []</span>
+
+<span class="c1"># Example 2</span>
+<span class="c1"># We can give a list values straight away when we create it</span>
+<span class="n">shopping_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apples&quot;</span><span class="p">,</span> <span class="s2">&quot;bananas&quot;</span><span class="p">,</span> <span class="s2">&quot;bread&quot;</span><span class="p">,</span> <span class="s2">&quot;mushrooms&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">)</span>
+
+<span class="c1"># Example 3</span>
+<span class="c1"># We can access items in a list the same way we did with strings, using indexing</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>         <span class="c1"># &quot;apples&quot;</span>
+
+<span class="c1"># Example 4</span>
+<span class="c1"># Negative indices count backwards from the end of the list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>        <span class="c1"># &quot;mushrooms&quot;</span>
+
+<span class="c1"># Example 5</span>
+<span class="c1"># Slicing works on lists just as it does on strings</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span>      <span class="c1"># every other item, starting from index 1</span>
+
+<span class="c1"># Example 6</span>
+<span class="c1"># This syntax changes the value stored at a specified index to a new value</span>
+<span class="n">shopping_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;tomatoes&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">)</span>
+
+<span class="c1"># Example 7</span>
+<span class="c1"># .append() adds a new value to the end of the list, extending it by one item</span>
+<span class="n">shopping_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;grapes&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">)</span>
+
+<span class="c1"># Example 8</span>
+<span class="c1"># .insert() places a new value at a specified position</span>
+<span class="c1"># Any existing values from that position onward are shifted one place to the right</span>
+<span class="n">shopping_list</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;lettuce&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">)</span>
+
+<span class="c1"># Example 9</span>
+<span class="c1"># len() tells us how many items are currently in the list</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">))</span>
+
+<span class="c1"># Example 10</span>
+<span class="c1"># The + operator concatenates two lists, producing a brand new combined list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;turnips&quot;</span><span class="p">,</span> <span class="s2">&quot;beetroot&quot;</span><span class="p">])</span>
+
+<span class="c1"># Example 11 (extra)</span>
+<span class="c1"># .remove() deletes the first matching value found in the list</span>
+<span class="n">shopping_list</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;bread&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">)</span>
+
+<span class="c1"># Example 12 (extra)</span>
+<span class="c1"># .sort() rearranges the list&#39;s items into ascending order, in place</span>
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">numbers</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>                  <span class="c1"># [1, 3, 4, 8]</span>
+
+<span class="c1"># Example 13 (extra)</span>
+<span class="c1"># A list can mix different data types together</span>
+<span class="n">mixed_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mixed_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">mixed_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>      <span class="c1"># &lt;class &#39;int&#39;&gt;</span>
+</code></pre></div>
+<h4 id="sample-exercise-solution_2">Sample Exercise Solution</h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># Solution Cell 1</span>
+<span class="c1"># Create the list with its initial values</span>
+<span class="n">cuddly_animals</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;rabbit&quot;</span><span class="p">,</span> <span class="s2">&quot;hamster&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cuddly_animals</span><span class="p">)</span>
+
+<span class="c1"># Solution Cell 2</span>
+<span class="c1"># Use the append method to add the string &quot;rat&quot; to the end of the list</span>
+<span class="n">cuddly_animals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;rat&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cuddly_animals</span><span class="p">)</span>
+
+<span class="c1"># Solution Cell 3</span>
+<span class="c1"># Use the insert method to insert &quot;chinchilla&quot; at the start of the list</span>
+<span class="c1"># Subsequent items in the list are shifted one position to the right</span>
+<span class="n">cuddly_animals</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;chinchilla&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cuddly_animals</span><span class="p">)</span>
+
+<span class="c1"># Solution Cell 4</span>
+<span class="c1"># Change the value of the second item in the list to &quot;ferret&quot;</span>
+<span class="n">cuddly_animals</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;ferret&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cuddly_animals</span><span class="p">)</span>
+
+<span class="c1"># Solution Cell 5</span>
+<span class="c1"># Trying to print the item with index 99 raises an error</span>
+<span class="c1"># This is because the list isn&#39;t large enough to contain an item at that index</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cuddly_animals</span><span class="p">[</span><span class="mi">99</span><span class="p">])</span>
+<span class="c1"># IndexError: list index out of range</span>
+
+<span class="c1"># Solution Cell 6</span>
+<span class="c1"># Similarly, trying to assign to index 99 also raises an error</span>
+<span class="c1"># You cannot assign to an index that doesn&#39;t already exist in the list</span>
+<span class="n">cuddly_animals</span><span class="p">[</span><span class="mi">99</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;gerbil&quot;</span>
+<span class="c1"># IndexError: list assignment index out of range</span>
+</code></pre></div>
+<p><strong>Why the errors matter:</strong> these two <code>IndexError</code> messages are deliberately included here because they're extremely common when you're starting out, especially once loops are involved. Rather than being something to avoid seeing, learning to read and understand error messages like this is a core programming skill in itself.</p>
+<p>In the next extension activity, we look at how to recognise complex numbers.</p>
+<h3 id="c6-extension-dictionaries">C.6 Extension: Dictionaries</h3>
+<p>By the end of this activity, you'll know how to create dictionaries and use their basic functions. <strong>Dictionaries</strong> are especially useful whenever information is naturally organised as <strong>key-value pairs</strong>, for example, mapping a name to a phone number, or a product code to its price.</p>
+<h4 id="exercise-4-dictionaries">Exercise 4: Dictionaries</h4>
+<p>In this exercise, you'll have a chance to write and test your own code. Please use Anaconda to complete the exercise.</p>
+<p>Run your code and save the file. As always, it's worth noting the steps you followed, your results, and any errors encountered.</p>
+<h4 id="python-code-examples_4">Python Code Examples</h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># Example 1</span>
+<span class="c1"># Create a dictionary and give it some initial values</span>
+<span class="c1"># Dictionaries are created using curly brackets {}</span>
+<span class="c1"># Key-value pairs are separated by commas</span>
+<span class="c1"># Each key-value pair contains a colon separating the key from its value</span>
+<span class="n">atomic_numbers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;H&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;He&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">atomic_numbers</span><span class="p">)</span>
+
+<span class="c1"># Example 2</span>
+<span class="c1"># We can add a new key-value pair using item assignment: dict_name[key] = value</span>
+<span class="n">atomic_numbers</span><span class="p">[</span><span class="s2">&quot;Li&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">atomic_numbers</span><span class="p">)</span>
+
+<span class="c1"># Example 3</span>
+<span class="c1"># The same item assignment syntax also lets us update an existing value</span>
+<span class="n">atomic_numbers</span><span class="p">[</span><span class="s2">&quot;H&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">atomic_numbers</span><span class="p">)</span>
+
+<span class="c1"># Example 4</span>
+<span class="c1"># We access an individual value by placing its key in square brackets</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">atomic_numbers</span><span class="p">[</span><span class="s2">&quot;He&quot;</span><span class="p">])</span>     <span class="c1"># 2</span>
+
+<span class="c1"># Example 5 (extra)</span>
+<span class="c1"># Attempting to access a key that doesn&#39;t exist raises an error</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">atomic_numbers</span><span class="p">[</span><span class="s2">&quot;O&quot;</span><span class="p">])</span>
+<span class="c1"># KeyError: &#39;O&#39;</span>
+
+<span class="c1"># Example 6 (extra)</span>
+<span class="c1"># .get() is a safer way to access a value, since it won&#39;t raise an error if the key is missing</span>
+<span class="c1"># Instead, it returns None (or a default value you specify) if the key isn&#39;t found</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">atomic_numbers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;O&quot;</span><span class="p">))</span>          <span class="c1"># None</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">atomic_numbers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;O&quot;</span><span class="p">,</span> <span class="s2">&quot;n/a&quot;</span><span class="p">))</span>   <span class="c1"># &quot;n/a&quot;</span>
+
+<span class="c1"># Example 7 (extra)</span>
+<span class="c1"># .keys(), .values(), and .items() let us inspect a dictionary&#39;s contents</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">atomic_numbers</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>     <span class="c1"># dict_keys([&#39;H&#39;, &#39;He&#39;, &#39;Li&#39;])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">atomic_numbers</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>   <span class="c1"># dict_values([0, 2, 3])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">atomic_numbers</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>    <span class="c1"># dict_items([(&#39;H&#39;, 0), (&#39;He&#39;, 2), (&#39;Li&#39;, 3)])</span>
+
+<span class="c1"># Example 8 (extra)</span>
+<span class="c1"># We can loop through a dictionary&#39;s key-value pairs directly</span>
+<span class="k">for</span> <span class="n">element</span><span class="p">,</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">atomic_numbers</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">element</span><span class="si">}</span><span class="s2"> has atomic number </span><span class="si">{</span><span class="n">number</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>A quick comparison worth remembering:</strong> a list is best when order matters and you look things up by <em>position</em> (e.g. "the third item"), while a dictionary is best when you look things up by a meaningful <em>label</em> (e.g. "the atomic number of hydrogen"). Recognising which of these fits your data naturally will save you a lot of unnecessary code later on.</p>
+<h2 id="comparing-pythons-common-data-types">Comparing Python's Common Data Types</h2>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Integer (<code>int</code>)</th>
+<th>Float (<code>float</code>)</th>
+<th>Boolean (<code>bool</code>)</th>
+<th>String (<code>str</code>)</th>
+<th>List (<code>list</code>)</th>
+<th>Dictionary (<code>dict</code>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Stores</strong></td>
+<td>Whole numbers</td>
+<td>Numbers with a decimal component</td>
+<td>Logical <code>True</code> / <code>False</code> values</td>
+<td>A sequence of characters (text)</td>
+<td>An ordered collection of values</td>
+<td>A collection of key-value pairs</td>
+</tr>
+<tr>
+<td><strong>Example</strong></td>
+<td><code>age = 25</code></td>
+<td><code>price = 9.99</code></td>
+<td><code>is_active = True</code></td>
+<td><code>name = "Ada"</code></td>
+<td><code>shopping_list = ["apples", "bananas"]</code></td>
+<td><code>atomic_numbers = {"H": 1, "He": 2}</code></td>
+</tr>
+<tr>
+<td><strong>Ordered?</strong></td>
+<td>N/A (single value)</td>
+<td>N/A (single value)</td>
+<td>N/A (single value)</td>
+<td>Yes, character order is fixed</td>
+<td>Yes, item order is preserved</td>
+<td>Insertion order preserved (Python 3.7+), but items are accessed by key, not position</td>
+</tr>
+<tr>
+<td><strong>Changeable (mutable)?</strong></td>
+<td>No, a new int is created whenever it's "changed"</td>
+<td>No, a new float is created whenever it's "changed"</td>
+<td>No</td>
+<td>No, strings are immutable, any "modification" creates a new string</td>
+<td>Yes, items can be added, removed, or changed in place</td>
+<td>Yes, key-value pairs can be added, removed, or changed in place</td>
+</tr>
+<tr>
+<td><strong>Accessed by</strong></td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>Index (position), e.g. <code>name[0]</code></td>
+<td>Index (position), e.g. <code>shopping_list[0]</code></td>
+<td>Key (label), e.g. <code>atomic_numbers["H"]</code></td>
+</tr>
+<tr>
+<td><strong>Supports slicing?</strong></td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes, e.g. <code>name[1:3]</code></td>
+<td>Yes, e.g. <code>shopping_list[1:3]</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Can mix types inside?</strong></td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>No, only characters</td>
+<td>Yes, e.g. <code>["text", 42, 3.14, True]</code></td>
+<td>Yes, both keys and values can vary in type</td>
+</tr>
+<tr>
+<td><strong>Common operations</strong></td>
+<td><code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>//</code>, <code>%</code>, <code>**</code></td>
+<td><code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>round()</code></td>
+<td><code>and</code>, <code>or</code>, <code>not</code></td>
+<td><code>+</code> (concatenation), <code>*</code> (repetition), <code>.upper()</code>, <code>.replace()</code></td>
+<td><code>.append()</code>, <code>.insert()</code>, <code>.remove()</code>, <code>.sort()</code></td>
+<td><code>.get()</code>, <code>.keys()</code>, <code>.values()</code>, <code>.items()</code></td>
+</tr>
+<tr>
+<td><strong>Best suited for</strong></td>
+<td>Counting, indexing, whole-number calculations</td>
+<td>Measurements, calculations requiring precision (prices, rates)</td>
+<td>Conditions, flags, on/off states</td>
+<td>Text, labels, messages</td>
+<td>Ordered collections looked up by position</td>
+<td>Structured lookups by meaningful label</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top"], "search": "../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>
