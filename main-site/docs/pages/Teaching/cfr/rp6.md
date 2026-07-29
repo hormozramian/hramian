@@ -1,9 +1,0 @@
----
-hide:
-  - title
-  - footer
----
-
-
-
-## Algorithm
