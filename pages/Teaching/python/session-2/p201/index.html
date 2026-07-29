@@ -1,0 +1,2529 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Python Programming for Finance Applications">
+      
+      
+        <meta name="author" content="Hormoz Ramian">
+      
+      
+        <link rel="canonical" href="https://www.hramian.com/python/session-2/p201/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../p202/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Variable Assignment - Python Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#variable-assignment" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Python Course" class="md-header__button md-logo" aria-label="Python Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Python Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Variable Assignment
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../session-1/" class="md-tabs__link">
+          
+  
+  
+  Session 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Session 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../session-3/" class="md-tabs__link">
+          
+  
+  
+  Session 3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../session-4/" class="md-tabs__link">
+          
+  
+  
+  Session 4
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Python Course" class="md-nav__button md-logo" aria-label="Python Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Python Course
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Session 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Session 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p101/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Foundations of Programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p102/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Language
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p103/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Development Environments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p104/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jupyter Notebook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p105/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cells and Executing Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p106/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Print Statement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p107/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setting Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p108/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mathematical Operators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p109/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Function
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p110/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p111/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Virtual Environment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p112/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p113/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-1/p114/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Session 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Session 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variable Assignment
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variable Assignment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#variable-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variable Assignment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable Assignment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reserved-keywords-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reserved Keywords in Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reserved Keywords in Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-full-list-of-keywords" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Full List of Keywords
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-the-list-yourself" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checking the List Yourself
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-special-case-soft-keywords" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Special Case: "Soft Keywords"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-common-pitfall-built-in-names-that-arent-keywords" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Common Pitfall: Built-in Names That Aren't Keywords
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Case Sensitivity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-self-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Self-Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p202/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p203/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Numpy, Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p204/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Numpy, Random Numbers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p205/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Numpy, Statistics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p206/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Numpy, Matrices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p207/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pandas, Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p208/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pandas, Data Examination
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p209/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pandas, DataFrame Processing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p210/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pandas, Essential Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p211/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Session 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Session 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-3/p301/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creating DataFrames
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-3/p302/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-3/p303/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preparing Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-3/p304/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-3/p305/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Inspection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-3/p306/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Merging Datasets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Session 4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Session 4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-4/p401/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Insights
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-4/p402/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualisation Matters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-4/p403/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matplotlib
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-4/p404/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trends
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-4/p405/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Breakdowns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session-4/p406/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relationships and Distributions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#variable-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variable Assignment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable Assignment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reserved-keywords-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reserved Keywords in Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reserved Keywords in Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-full-list-of-keywords" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Full List of Keywords
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-the-list-yourself" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checking the List Yourself
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-special-case-soft-keywords" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Special Case: "Soft Keywords"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-common-pitfall-built-in-names-that-arent-keywords" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Common Pitfall: Built-in Names That Aren't Keywords
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Case Sensitivity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-self-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Self-Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+  <h1>Variable Assignment</h1>
+
+<h2 id="variable-assignment">Variable Assignment<a class="headerlink" href="#variable-assignment" title="Permanent link">&para;</a></h2>
+<p>In every programming language, a <strong>variable</strong> is simply a label, a name you choose, that lets you refer to a piece of information stored in your computer's memory. Think of it a bit like a labelled box: you don't need to know exactly where in memory a value physically lives, you just need to remember the name you gave it. In this activity, you'll get hands-on practice with variables in Python, and see how <strong>assignment statements</strong> are used to store a value, update it later, and retrieve it whenever you need it.</p>
+<p>For example:</p>
+<pre><code class="language-python"># Assigning a value to a variable
+age = 25
+
+# Retrieving the value by using its name
+print(age)   # Output: 25
+
+# Updating the variable to a new value
+age = 26
+print(age)   # Output: 26
+</code></pre>
+<p>Here, <code>age</code> is the variable name, and the <code>=</code> sign is the <strong>assignment operator</strong>, it takes the value on the right and stores it under the name on the left. Once a variable has been assigned, you can use it anywhere in your code simply by referring to its name.</p>
+<p>Choosing meaningful, descriptive variable names is one of the most valuable habits you can build as a new programmer. Consider the difference between these two examples, which do exactly the same thing:</p>
+<pre><code class="language-python"># Hard to understand at a glance
+x = 9.99
+y = 3
+z = x * y
+print(z)
+
+# Much clearer, and easier to check for mistakes
+price_per_item = 9.99
+quantity = 3
+total_cost = price_per_item * quantity
+print(total_cost)
+</code></pre>
+<p>Both versions work, but the second is far easier to read, debug, and hand over to someone else, including your future self, returning to the code weeks later. Good variable names act almost like built-in comments, making your intentions clear without needing extra explanation.</p>
+<p>One thing to be aware of: Python reserves a small set of special <strong>keywords</strong> for its own language syntax, words like <code>if</code>, <code>for</code>, <code>class</code>, and <code>True</code>, and these cannot be used as variable names, since Python needs them to mean something very specific. Trying to use one will raise an error:</p>
+<pre><code class="language-python"># This will cause a SyntaxError, because 'True' is a reserved keyword
+True = 5
+</code></pre>
+<p>Don't worry about memorising every reserved keyword right away, you'll get used to spotting them naturally as you write more Python, and most code editors will highlight them in a different colour to warn you.</p>
+<h3 id="reserved-keywords-in-python">Reserved Keywords in Python<a class="headerlink" href="#reserved-keywords-in-python" title="Permanent link">&para;</a></h3>
+<p>Python sets aside a small collection of special words, called <strong>reserved keywords</strong>, that already have a fixed, built-in meaning within the language itself. Because Python relies on these words to understand the structure of your code, for example, to recognise a loop, define a function, or check a condition, none of them can be used as variable names. Trying to do so will cause Python to raise a <code>SyntaxError</code>, since it will attempt to interpret the word as an instruction rather than as a label you're trying to create.</p>
+<pre><code class="language-python"># Trying to use a keyword as a variable name fails immediately
+for = 5
+# SyntaxError: invalid syntax
+</code></pre>
+<h4 id="the-full-list-of-keywords">The Full List of Keywords<a class="headerlink" href="#the-full-list-of-keywords" title="Permanent link">&para;</a></h4>
+<p>As of recent versions of Python, there are 35 reserved keywords in total. It can help to think of them not as one big list to memorise, but as a handful of small, logical groups, each serving a different purpose in the language.</p>
+<p><strong>Boolean and special values</strong></p>
+<table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>True</code></td>
+<td>Represents the boolean value true</td>
+</tr>
+<tr>
+<td><code>False</code></td>
+<td>Represents the boolean value false</td>
+</tr>
+<tr>
+<td><code>None</code></td>
+<td>Represents the absence of a value</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-python">is_active = True
+has_error = False
+result = None
+
+print(is_active, has_error, result)   # Output: True False None
+</code></pre>
+<p><strong>Logical and comparison operators</strong></p>
+<table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>and</code></td>
+<td>Logical AND</td>
+</tr>
+<tr>
+<td><code>or</code></td>
+<td>Logical OR</td>
+</tr>
+<tr>
+<td><code>not</code></td>
+<td>Logical negation</td>
+</tr>
+<tr>
+<td><code>in</code></td>
+<td>Membership test (e.g. <code>x in my_list</code>)</td>
+</tr>
+<tr>
+<td><code>is</code></td>
+<td>Identity comparison (e.g. <code>x is None</code>)</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-python">age = 25
+has_id = True
+
+# 'and' / 'or' / 'not' combine conditions
+if age &gt;= 18 and has_id:
+    print(&quot;Entry allowed&quot;)
+
+if age &lt; 18 or not has_id:
+    print(&quot;Entry denied&quot;)
+
+# 'in' checks membership
+fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
+print(&quot;banana&quot; in fruits)     # True
+
+# 'is' checks identity, not just equality
+x = None
+print(x is None)              # True, this is the preferred way to check for None
+</code></pre>
+<p><strong>Control flow</strong></p>
+<table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>if</code>, <code>elif</code>, <code>else</code></td>
+<td>Conditional branching</td>
+</tr>
+<tr>
+<td><code>for</code>, <code>while</code></td>
+<td>Loops</td>
+</tr>
+<tr>
+<td><code>break</code>, <code>continue</code></td>
+<td>Alter loop behaviour</td>
+</tr>
+<tr>
+<td><code>pass</code></td>
+<td>A placeholder that does nothing</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-python">score = 72
+
+# if / elif / else
+if score &gt;= 90:
+    grade = &quot;A&quot;
+elif score &gt;= 70:
+    grade = &quot;B&quot;
+else:
+    grade = &quot;C&quot;
+
+print(grade)   # Output: B
+
+# for loop with break and continue
+for number in range(10):
+    if number == 3:
+        continue        # skip printing 3
+    if number == 6:
+        break            # stop the loop entirely once we reach 6
+    print(number)
+
+# pass as a placeholder, useful when writing a function or class before filling it in
+def not_yet_implemented():
+    pass
+</code></pre>
+<p><strong>Functions and structure</strong></p>
+<table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>def</code></td>
+<td>Defines a function</td>
+</tr>
+<tr>
+<td><code>return</code></td>
+<td>Returns a value from a function</td>
+</tr>
+<tr>
+<td><code>lambda</code></td>
+<td>Creates a small, unnamed function</td>
+</tr>
+<tr>
+<td><code>class</code></td>
+<td>Defines a class</td>
+</tr>
+<tr>
+<td><code>yield</code></td>
+<td>Returns a value from a generator function</td>
+</tr>
+<tr>
+<td><code>global</code></td>
+<td>Refers to a variable at the module level</td>
+</tr>
+<tr>
+<td><code>nonlocal</code></td>
+<td>Refers to a variable in an enclosing (but non-global) scope</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-python"># def and return
+def square(x):
+    return x * x
+
+print(square(4))   # Output: 16
+
+# lambda: a quick, unnamed function
+double = lambda x: x * 2
+print(double(5))   # Output: 10
+
+# class: defines a new object type
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+my_dog = Dog(&quot;Rex&quot;)
+print(my_dog.name)   # Output: Rex
+
+# yield: used in generator functions, producing values one at a time
+def count_up_to(n):
+    i = 1
+    while i &lt;= n:
+        yield i
+        i += 1
+
+for number in count_up_to(3):
+    print(number)   # Output: 1 2 3
+
+# global vs nonlocal
+counter = 0
+
+def increment():
+    global counter
+    counter += 1
+
+increment()
+print(counter)   # Output: 1
+</code></pre>
+<p><strong>Importing code</strong></p>
+<table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>import</code></td>
+<td>Loads a module</td>
+</tr>
+<tr>
+<td><code>from</code></td>
+<td>Imports specific parts of a module</td>
+</tr>
+<tr>
+<td><code>as</code></td>
+<td>Creates an alias, e.g. <code>import numpy as np</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-python">import math
+print(math.sqrt(16))          # Output: 4.0
+
+from math import pi
+print(pi)                      # Output: 3.141592653589793
+
+import pandas as pd            # 'as' creates a shorter alias
+</code></pre>
+<p><strong>Exception handling</strong></p>
+<table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>try</code>, <code>except</code>, <code>finally</code></td>
+<td>Handle errors gracefully</td>
+</tr>
+<tr>
+<td><code>raise</code></td>
+<td>Manually triggers an error</td>
+</tr>
+<tr>
+<td><code>assert</code></td>
+<td>Checks that a condition holds, raising an error if not</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-python">try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print(&quot;You can't divide by zero!&quot;)
+finally:
+    print(&quot;This runs whether or not an error occurred.&quot;)
+
+# raise: manually trigger an error
+age = -1
+if age &lt; 0:
+    raise ValueError(&quot;Age cannot be negative&quot;)
+
+# assert: a quick sanity check, useful when testing code
+assert age &gt;= 0, &quot;Age should never be negative&quot;
+</code></pre>
+<p><strong>Context management and deletion</strong></p>
+<table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>with</code></td>
+<td>Manages resources such as open files</td>
+</tr>
+<tr>
+<td><code>del</code></td>
+<td>Deletes a variable or item</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-python"># with: automatically closes the file afterwards, even if an error occurs
+with open(&quot;example.txt&quot;, &quot;w&quot;) as f:
+    f.write(&quot;Hello, world!&quot;)
+
+# del: removes a variable or list item entirely
+scores = [10, 20, 30]
+del scores[1]
+print(scores)   # Output: [10, 30]
+</code></pre>
+<p><strong>Asynchronous programming</strong> (introduced in Python 3.5+, made full reserved keywords in Python 3.7)</p>
+<table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>async</code></td>
+<td>Declares an asynchronous function</td>
+</tr>
+<tr>
+<td><code>await</code></td>
+<td>Waits for an asynchronous operation to complete</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-python">import asyncio
+
+async def fetch_data():
+    print(&quot;Fetching...&quot;)
+    await asyncio.sleep(1)   # pauses here without blocking the whole program
+    print(&quot;Done!&quot;)
+
+asyncio.run(fetch_data())
+</code></pre>
+<h4 id="checking-the-list-yourself">Checking the List Yourself<a class="headerlink" href="#checking-the-list-yourself" title="Permanent link">&para;</a></h4>
+<p>Rather than relying on memory, Python lets you check the current, authoritative list of keywords directly, which is useful since the exact list can change slightly between versions:</p>
+<pre><code class="language-python">import keyword
+
+print(keyword.kwlist)
+print(len(keyword.kwlist))   # Confirms how many keywords exist in your version
+</code></pre>
+<h4 id="a-special-case-soft-keywords">A Special Case: "Soft Keywords"<a class="headerlink" href="#a-special-case-soft-keywords" title="Permanent link">&para;</a></h4>
+<p>Since Python 3.10, a small number of words behave as <strong>soft keywords</strong>. These words have special meaning only in specific contexts, but remain perfectly valid as variable names everywhere else. This is a deliberate design choice, allowing Python to add new syntax (such as the <code>match</code> statement) without breaking existing code that may already be using these words as variable names.</p>
+<p>The current soft keywords are: <code>match</code>, <code>case</code>, <code>type</code>, and <code>_</code>.</p>
+<pre><code class="language-python"># 'match' is used here as a soft keyword, introducing a match statement
+command = &quot;start&quot;
+match command:
+    case &quot;start&quot;:
+        print(&quot;Starting...&quot;)
+    case &quot;stop&quot;:
+        print(&quot;Stopping...&quot;)
+    case _:
+        print(&quot;Unknown command&quot;)   # '_' acts as a wildcard/default case here
+
+# But 'match' is also perfectly valid as an ordinary variable name elsewhere
+match = 5
+print(match)   # Output: 5
+
+# Likewise, 'type' is a soft keyword/built-in name, but can be reassigned (see pitfall below)
+type = &quot;reassigned&quot;
+print(type)   # Output: reassigned
+</code></pre>
+<p>You can check the current soft keywords the same way:</p>
+<pre><code class="language-python">print(keyword.softkwlist)
+</code></pre>
+<h4 id="a-common-pitfall-built-in-names-that-arent-keywords">A Common Pitfall: Built-in Names That Aren't Keywords<a class="headerlink" href="#a-common-pitfall-built-in-names-that-arent-keywords" title="Permanent link">&para;</a></h4>
+<p>A frequent source of confusion for learners is the difference between <strong>reserved keywords</strong> and <strong>built-in function or type names</strong>, such as <code>print</code>, <code>list</code>, <code>str</code>, <code>int</code>, <code>len</code>, or <code>type</code>. These are not reserved keywords at all, they're simply predefined names that Python provides in its standard library. This means Python will <em>not</em> stop you from reassigning them:</p>
+<pre><code class="language-python"># This is technically allowed, but strongly discouraged
+list = [1, 2, 3]
+
+# Now 'list' no longer refers to Python's built-in list type,
+# so this will raise a TypeError instead of creating a new list
+new_list = list(&quot;hello&quot;)
+# TypeError: 'list' object is not callable
+</code></pre>
+<p>Another common example of this pitfall:</p>
+<pre><code class="language-python"># Overwriting the built-in 'str' function
+str = &quot;some text&quot;
+
+# Now trying to convert a number to text will fail
+value = str(42)
+# TypeError: 'str' object is not callable
+</code></pre>
+<p>Because no error is raised at the moment of reassignment, this kind of mistake can be especially confusing to debug, since the problem often only becomes apparent several lines later, when the built-in function is needed again but no longer behaves as expected. As a good habit, avoid using built-in names as variable names, even though Python permits it. If you accidentally do this in a Jupyter Notebook, restarting the kernel will restore the original built-in.</p>
+<h4 id="case-sensitivity">Case Sensitivity<a class="headerlink" href="#case-sensitivity" title="Permanent link">&para;</a></h4>
+<p>Python keywords are case-sensitive, so only the exact casing shown in the list above is reserved. This means, somewhat surprisingly to new learners, that a word like <code>true</code> or <code>NONE</code> is perfectly valid as a variable name, even though <code>True</code> and <code>None</code> are not:</p>
+<pre><code class="language-python">true = &quot;yes&quot;       # Valid, since Python's keyword is 'True', not 'true'
+NONE = &quot;empty&quot;      # Valid, since Python's keyword is 'None', not 'NONE'
+Class = &quot;MyClass&quot;   # Valid, since Python's keyword is 'class', not 'Class'
+
+print(true, NONE, Class)   # Output: yes empty MyClass
+</code></pre>
+<p>That said, using near-identical variations of keywords like this is generally poor practice, since it can easily confuse readers of your code, or even yourself when returning to it later.</p>
+<h4 id="quick-self-check">Quick Self-Check<a class="headerlink" href="#quick-self-check" title="Permanent link">&para;</a></h4>
+<p>If you're ever unsure whether a particular word is reserved, there are two quick ways to check without needing to look anything up:</p>
+<pre><code class="language-python">import keyword
+
+# Method 1: check directly
+print(keyword.iskeyword(&quot;class&quot;))       # True
+print(keyword.iskeyword(&quot;dataframe&quot;))   # False
+print(keyword.iskeyword(&quot;match&quot;))       # False, since it's a soft keyword, not a full keyword
+print(keyword.issoftkeyword(&quot;match&quot;))   # True
+
+# Method 2: just try assigning it in a notebook cell
+# If Python raises a SyntaxError, the word is reserved
+</code></pre>
+<p>Getting comfortable with this small set of reserved words early on will save you time later, since encountering a <code>SyntaxError</code> caused by an accidental keyword clash is a common early stumbling block, but a very quick one to resolve once you know what to look for.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Hormoz Ramian
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -6,29 +6,37 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Python Programming for Finance Applications">
       
       
-        <link rel="canonical" href="https://www.hramian.com/pages/Teaching/python/session-2/">
+        <meta name="author" content="Hormoz Ramian">
       
       
+        <link rel="canonical" href="https://www.hramian.com/python/session-2/">
+      
+      
+        <link rel="prev" href="../session-1/p114/">
+      
+      
+        <link rel="next" href="p201/">
       
       
         
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Introduction - Hormoz Ramian</title>
+        <title>Overview - Python Course</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,19 +55,9 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-  
-
-
-  
-  
-
-<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-H3V1WV4Y35"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-H3V1WV4Y35",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-H3V1WV4Y35",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
-  
-    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-  
 
     
     
@@ -68,12 +66,10 @@
   
     
     
-      
     
     
     
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -82,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#session-2-working-with-python-data" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="Hormoz Ramian" class="md-header__button md-logo" aria-label="Hormoz Ramian" data-md-component="logo">
+    <a href=".." title="Python Course" class="md-header__button md-logo" aria-label="Python Course" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,13 +106,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Hormoz Ramian
+            Python Course
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Overview
             
           </span>
         </div>
@@ -124,33 +120,7 @@
     </div>
     
       
-        <form class="md-header__option" data-md-component="palette">
-  
     
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
-      </label>
-    
-  
-</form>
-      
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -215,7 +185,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -233,17 +203,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../../../Research/" class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../session-1/" class="md-tabs__link">
+          
   
-  Research
+  
+  Session 1
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -251,17 +222,17 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
-    
-  
-  Teaching
+  Session 2
 
         </a>
       </li>
@@ -274,35 +245,14 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Python
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
     
     
       <li class="md-tabs__item">
-        <a href="../../cfr/" class="md-tabs__link">
+        <a href="../session-3/" class="md-tabs__link">
           
   
   
-    
-  
-  Applied Statistical Computing
+  Session 3
 
         </a>
       </li>
@@ -315,36 +265,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../../../simulator/" class="md-tabs__link">
-        
-  
-  
     
-  
-  Financial Simulation
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../cv/" class="md-tabs__link">
-        
-  
-  
     
+      <li class="md-tabs__item">
+        <a href="../session-4/" class="md-tabs__link">
+          
   
-  CV
+  
+  Session 4
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -359,6 +291,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -370,13 +304,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="Hormoz Ramian" class="md-nav__button md-logo" aria-label="Hormoz Ramian" data-md-component="logo">
+    <a href=".." title="Python Course" class="md-nav__button md-logo" aria-label="Python Course" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Hormoz Ramian
+    Python Course
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -388,7 +322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -414,52 +348,13 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../Research/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
     
-  
-    Research
-  
-
     
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
+    
     
       
-      
-  
-  
-  
-  
-    
-    
       
         
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
       
     
     
@@ -467,20 +362,17 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
     
   
-    Teaching
+    Session 1
   
 
     
@@ -488,43 +380,35 @@
   
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Teaching
+    Session 1
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-            
-              
                 
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../accfin5246/" class="md-nav__link">
+      <a href="../session-1/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Data Science and Machine Learning in Finance
+    Overview
   
 
     
@@ -545,14 +429,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../accfin5014/" class="md-nav__link">
+      <a href="../session-1/p101/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Asset Pricing
+    Foundations of Programming
   
 
     
@@ -573,14 +457,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../accfin5277/" class="md-nav__link">
+      <a href="../session-1/p102/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Finance Programming in Python and Databases
+    Python Language
   
 
     
@@ -601,14 +485,780 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bus5020.md" class="md-nav__link">
+      <a href="../session-1/p103/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Entrepreneurial Finance
+    Python Development Environments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-1/p104/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jupyter Notebook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-1/p105/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cells and Executing Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-1/p106/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Print Statement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-1/p107/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setting Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-1/p108/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mathematical Operators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-1/p109/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Function
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-1/p110/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-1/p111/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Virtual Environment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-1/p112/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-1/p113/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-1/p114/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Session 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Session 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="p201/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variable Assignment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="p202/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="p203/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Numpy, Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="p204/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Numpy, Random Numbers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="p205/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Numpy, Statistics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="p206/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Numpy, Matrices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="p207/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pandas, Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="p208/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pandas, Data Examination
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="p209/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pandas, DataFrame Processing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="p210/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pandas, Essential Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="p211/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summary
   
 
     
@@ -635,15 +1285,67 @@
   
   
   
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Session 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Session 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../session-3/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Python
+    Overview
   
 
     
@@ -652,6 +1354,182 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-3/p301/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creating DataFrames
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-3/p302/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-3/p303/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preparing Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-3/p304/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-3/p305/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Inspection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-3/p306/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Merging Datasets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -664,19 +1542,11 @@
   
     
     
-      
-        
-          
-        
-      
-        
-      
-        
-      
-    
     
     
       
+      
+        
       
     
     
@@ -684,20 +1554,17 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <div class="md-nav__link md-nav__container">
-            <a href="../../cfr/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
     
   
-    Applied Statistical Computing
+    Session 4
   
 
     
@@ -705,113 +1572,15 @@
   
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Applied Statistical Computing
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cfr/rp1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Background
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Software Environment
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Software Environment
+    Session 4
   
 
           </label>
@@ -824,14 +1593,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cfr/rp2/" class="md-nav__link">
+      <a href="../session-4/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    User Interface
+    Overview
   
 
     
@@ -852,14 +1621,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cfr/rp3/" class="md-nav__link">
+      <a href="../session-4/p401/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Variable Types
+    Data Insights
   
 
     
@@ -880,14 +1649,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cfr/rp4/" class="md-nav__link">
+      <a href="../session-4/p402/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Operators
+    Visualisation Matters
   
 
     
@@ -908,14 +1677,98 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cfr/rp5/" class="md-nav__link">
+      <a href="../session-4/p403/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Libraries
+    Matplotlib
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-4/p404/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trends
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-4/p405/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Breakdowns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-4/p406/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relationships and Distributions
   
 
     
@@ -932,68 +1785,6 @@
           </ul>
         </nav>
       
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../simulator/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Financial Simulation
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../cv/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    CV
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -1006,7 +1797,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1025,582 +1818,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#a-the-print-statement" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        A. The Print Statement
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-does-print-do" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What does print do?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-is-print-useful" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why is print useful?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercise-1-print-statement" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercise 1: Print Statement
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#b-setting-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        B. Setting Variables
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-a-variable" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What is a Variable?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-variables-matter" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why Variables Matter
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercise-2-setting-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercise 2: Setting Variables
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#c-mathematical-operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        C. Mathematical Operators
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Common Operators
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#operators-and-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Operators and Variables
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercise-3-mathematical-operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercise 3: Mathematical Operators
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#d-comments" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        D. Comments
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-a-comment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What is a Comment?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-comments-are-useful" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why Comments are Useful
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#good-practice" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Good Practice
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#e-your-turn-my-first-program" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        E. Your Turn: My First Program
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-you-will-practise" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What You Will Practise
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#activity-guidance" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Activity Guidance
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#learning-tip" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Learning Tip
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#f-variables-and-assignment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        F. Variables and Assignment
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reserved-keywords-in-python" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reserved Keywords in Python
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python-code-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python Code Examples
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#g-common-python-data-types" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        G. Common Python Data Types
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#g1-overview-and-glossary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        G.1 Overview and Glossary
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#g2-types" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        G.2 Types
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python-code-examples_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python Code Examples
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#g3-numerical-types" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        G.3 Numerical Types
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercise-1-numerical-types" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercise 1: Numerical Types
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python-code-examples_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python Code Examples
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sample-exercise-solution" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sample Exercise Solution
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#g4-strings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        G.4 Strings
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercise-2-strings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercise 2: Strings
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python-code-examples_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python Code Examples
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sample-exercise-solution_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sample Exercise Solution
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#g5-lists" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        G.5 Lists
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercise-3-lists" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercise 3: Lists
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python-code-examples_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python Code Examples
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sample-exercise-solution_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sample Exercise Solution
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#g6-extension-dictionaries" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        G.6 Extension: Dictionaries
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercise-4-dictionaries" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercise 4: Dictionaries
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python-code-examples_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python Code Examples
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h-pandas" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        H. Pandas
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h1-pandas-and-dataframes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        H.1 Pandas and DataFrames
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python-code-examples-creating-and-inspecting-dataframes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python Code Examples: Creating and Inspecting DataFrames
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h2-loading-and-inspecting-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        H.2 Loading and Inspecting Data
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python-code-examples-loading-and-inspecting-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python Code Examples: Loading and Inspecting Data
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h3-accessing-modifying-and-filtering-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        H.3 Accessing, Modifying and Filtering Data
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python-code-examples-accessing-and-modifying-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python Code Examples: Accessing and Modifying Data
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h4-practice-and-titanic-extension" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        H.4 Practice and Titanic Extension
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python-code-examples-optional-practice" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python Code Examples: Optional Practice
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h5-advanced-dataframe-processing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        H.5 Advanced DataFrame Processing
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python-code-examples-advanced-dataframe-processing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python Code Examples: Advanced DataFrame Processing
+        Overview
       
     </span>
   </a>
@@ -1621,888 +1842,82 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="introduction">Introduction</h1>
-<p>Welcome to <strong>Session 2: Introduction to Python</strong>.</p>
-<p>The goal of this session is to introduce you to your first pieces of Python code and help you become comfortable enough to write your own program to solve a simple problem. You will be introduced to a series of simple Python commands and will write short pieces of code using them to achieve particular outcomes.</p>
-<p>By the end of this session, you will know how to use your first commands, including basic mathematical operators. You will also be able to use these commands to write a program that achieves a simple task and use comments to annotate your new code.</p>
-<p>Many of the topics introduced here will be revisited later in the course, where we will develop a more detailed understanding of how they work.</p>
-<p>Please take the time to review the learning outcomes for this session below.</p>
-<pre><code>## Learning Outcomes
 
-By the end of this session, you will have learned how to:
-
-  - Use the `print` function to display information.
-
-  - Set and use variables in Python.
-
-  - Apply basic mathematical operators.
-
-  - Write simple Python commands to complete a task.
-
-  - Use comments to annotate and explain code.
-
-  - Run, save, and review your own Python programs in Anaconda/Jupyter.
-
-  - Recognise reserved Python keywords and avoid using them as variable names.
-
-  - Use common Python data types, including numerical types, strings, lists and dictionaries.
-</code></pre>
-<p>Let’s get started. The remaining topics in this session are organised below.</p>
-<hr />
-<h2 id="a-the-print-statement">A. The Print Statement</h2>
-<pre><code>  In this activity, we begin to explore the use of the `print` statement. The `print` statement is a useful and important function in Python because it allows us to extract information from our code and display it on the screen.
-
-  This is useful for creating outputs, checking whether code is working correctly, debugging errors, and providing information to a user.
-</code></pre>
-<h2 id="what-does-print-do">What does print do?</h2>
-<p>The <code>print</code> function sends information from a Python program to the output area. In a Jupyter Notebook, this output is displayed directly below the code cell after the cell is run.</p>
-<h2 id="why-is-print-useful">Why is print useful?</h2>
-<p>The <code>print</code> function is often used when learning Python because it gives immediate feedback. It can show the result of a calculation, display the value of a variable, or help identify where an error may be occurring.</p>
-<h2 id="exercise-1-print-statement">Exercise 1: Print Statement</h2>
-<p>You now have an opportunity to write and test your own code. Please use Anaconda and Jupyter Notebook to complete the exercise.</p>
-<p>Run your code and save the file. You may also want to make note of the steps you followed, the results you obtained, and any errors you encountered.</p>
-<pre><code>  In the next activity, we will look at how to identify and use variables in Python.
-</code></pre>
-<h2 id="b-setting-variables">B. Setting Variables</h2>
-<pre><code>  In this activity, we explore variables. A key concept in any coding language is that of a variable. When data is saved in a program, it is referred to as a variable and may be referenced by one or more variable names.
-
-  These variable names allow us to access, alter, or use the stored data in calculations. Variables are therefore central to writing useful programs because they allow information to be stored and reused.
-</code></pre>
-<h2 id="what-is-a-variable">What is a Variable?</h2>
-<p>A variable is a named location used to store data in a program. Once a value has been assigned to a variable, the variable name can be used later in the code to refer back to that value.</p>
-<h2 id="why-variables-matter">Why Variables Matter</h2>
-<p>Variables make code more flexible and easier to understand. Instead of repeating values throughout a program, you can store a value once and refer to it by name whenever it is needed.</p>
-<h2 id="exercise-2-setting-variables">Exercise 2: Setting Variables</h2>
-<p>You now have an opportunity to write and test your own code. Please use Anaconda and Jupyter Notebook to complete the exercise.</p>
-<p>Run your code and save the file. You may also want to make note of the steps you followed, the results you obtained, and any errors you encountered.</p>
-<pre><code>  In the next activity, we look at how to identify and use mathematical operators.
-</code></pre>
-<h2 id="c-mathematical-operators">C. Mathematical Operators</h2>
-<pre><code>  In this activity, we look at how to use some basic mathematical operators in Python. Many of these operators work in a similar way to how you would expect them to work in a mathematical equation.
-
-  Mathematical operators allow Python to perform calculations, making them one of the most important tools for solving numerical problems in code.
-</code></pre>
-<h2 id="common-operators">Common Operators</h2>
-<p>Python includes operators for common calculations such as addition, subtraction, multiplication, division, powers, and other mathematical operations. These operators can be used directly with numbers or with variables that store numerical values.</p>
-<h2 id="operators-and-variables">Operators and Variables</h2>
-<p>Once a number has been stored in a variable, the variable name can be used inside a mathematical expression. This makes it possible to write calculations that are easier to update and reuse.</p>
-<h2 id="exercise-3-mathematical-operators">Exercise 3: Mathematical Operators</h2>
-<p>In this exercise, you will have a chance to write and test your own code. Please use Anaconda and Jupyter Notebook to complete the exercise.</p>
-<p>Run your code and save the file. You may also want to make note of the steps you followed, the results you obtained, and any errors you encountered.</p>
-<pre><code>  In the next activity, we look at how comments work.
-</code></pre>
-<h2 id="d-comments">D. Comments</h2>
-<pre><code>  In this activity, we look at how to use comments. Comments are common to many coding languages and provide a way to write notes in a source file that will be ignored by the interpreter.
-
-  Comments are useful because they allow you to explain what your code is doing, record your thinking, and make programs easier for other people to understand.
-</code></pre>
-<h2 id="what-is-a-comment">What is a Comment?</h2>
-<p>A comment is text written inside a source file that is intended for human readers rather than the computer. When Python runs the program, comments are ignored and do not affect the output.</p>
-<h2 id="why-comments-are-useful">Why Comments are Useful</h2>
-<p>Comments help explain the purpose of code, document assumptions, clarify complex sections, and make your work easier to revisit later. They are especially valuable when code is shared with other users.</p>
-<h2 id="good-practice">Good Practice</h2>
-<p>Good comments should be clear, concise, and useful. They should explain why something is being done or clarify the purpose of a section of code, rather than simply repeating what is already obvious.</p>
-<h2 id="e-your-turn-my-first-program">E. Your Turn: My First Program</h2>
-<pre><code>  In this activity, you will have an opportunity to test your understanding of the key concepts and skills developed in this session.
-
-  You will bring together the main ideas covered so far by using the `print` function, setting variables, applying mathematical operators, and adding comments to your code.
-</code></pre>
-<h2 id="what-you-will-practise">What You Will Practise</h2>
+<h1 id="session-2-working-with-python-data">Session 2: Working with Python Data<a class="headerlink" href="#session-2-working-with-python-data" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>This session moves from writing individual lines of Python toward working with <strong>data</strong> in a structured, organised way. Building on the basic syntax introduced in Session 1, this session covers how Python stores, represents, and manipulates information, then extends these ideas into the numerical computing tools provided by NumPy and the tabular data tools provided by pandas.</p>
+<p>The session is organised into a sequence of parts:</p>
 <ul>
-<li>How to use the <code>print</code> function.</li>
-<li>How to set variables.</li>
-<li>How to use mathematical operators.</li>
-<li>How to add comments to your code.</li>
+<li><strong>Variable Assignment</strong> — revisiting variables and assignment statements, and covering Python's reserved keywords in detail.</li>
+<li><strong>Common Python Data Types</strong> — numerical types, strings, lists, and dictionaries, and how to store, manipulate, and extract information from each.</li>
+<li><strong>NumPy Basics</strong> — what NumPy is, why it matters for numerical computing, and how to create and inspect arrays.</li>
+<li><strong>Random Numbers</strong> — generating random numbers from various distributions, and using a random seed for reproducibility.</li>
+<li><strong>Statistical Operations</strong> — summarising numerical data using means, standard deviations, percentiles, and axis-based aggregation.</li>
+<li><strong>Matrix Manipulation and Data Preparation</strong> — reshaping, stacking, and combining arrays ready for analysis.</li>
+<li><strong>Pandas</strong> — creating and inspecting DataFrames, then loading and inspecting a real dataset.</li>
+<li><strong>Accessing, Modifying and Filtering Data</strong> — indexing, dropping, replacing, and filtering rows and columns in a DataFrame.</li>
+<li><strong>DataFrame Processing</strong> — merging datasets, grouped calculations, and applying custom transformations.</li>
+<li><strong>Essential Pandas Tools</strong> — missing data, <code>.loc</code> vs <code>.iloc</code>, sorting, concatenation, text and date handling, duplicates, and exporting.</li>
+<li><strong>Comparing Variable Types Across Python, NumPy, and Pandas</strong> — a reference table connecting every variable type introduced in the session.</li>
 </ul>
-<h2 id="activity-guidance">Activity Guidance</h2>
-<p>Work through the task step by step. Write your code, run it, check the output, and make changes where needed. Save your file once you have completed the activity.</p>
-<h2 id="learning-tip">Learning Tip</h2>
-<p>Your first program does not need to be complex. The important goal is to practise combining several simple ideas into one working piece of code.</p>
-<pre><code>  Once you have completed this activity, you will be ready to continue building more structured Python programs.
-</code></pre>
-<h2 id="f-variables-and-assignment">F. Variables and Assignment</h2>
-<pre><code>  In all coding languages, a variable is a label used in the source code to reference a piece of information stored in your computer’s memory. In this activity, you will learn more about variables in Python and how assignment statements are used to store, modify, and retrieve values.
-
-  Choosing meaningful variable names is an important programming skill. Good variable names improve readability, make programs easier to debug, and help other programmers understand your code. Python also reserves a number of keywords for its own language syntax, meaning they cannot be used as variable names.
-</code></pre>
-<h2 id="reserved-keywords-in-python">Reserved Keywords in Python</h2>
-<p>The following words are reserved by Python because they have special meanings within the language. They cannot be used as variable names.</p>
-<p>andexceptlambdawithasfinallynonlocalwhileassertFalseNoneyieldbreakfornotclassfromorcontinueglobalpassdefifraisedelimportreturnelifinTrueelseistry</p>
-<h2 id="python-code-examples">Python Code Examples</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Example 1</span>
-<span class="c1">#Keywords are highlighted</span>
-<span class="ow">and</span> <span class="o">=</span> <span class="mi">1</span>
-
-<span class="c1"># Example 2</span>
-<span class="c1">#Creating a variable with assignment</span>
-<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
-
-<span class="c1"># Example 3</span>
-<span class="c1">#Checking a variable name exists by printing its value</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-
-<span class="c1"># Example 4</span>
-<span class="c1">#Printing (or otherwise accessing) a variable before it has been asigned to will result in an error</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
-
-<span class="c1"># Example 5</span>
-<span class="c1">#It&#39;s valid to use a variable name in an expression that assigns to it</span>
-<span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">x</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-<span class="c1"># Example 6</span>
-<span class="c1">#The variable name to be assigned to must be on the left of the assignment operator</span>
-<span class="mi">3</span> <span class="o">=</span> <span class="n">x</span>
-</code></pre></div>
-<pre><code>  This activity reinforces the idea that variable names are labels for stored information and that assignment statements control how values are stored and updated throughout a Python program.
-</code></pre>
-<h2 id="g-common-python-data-types">G. Common Python Data Types</h2>
-<pre><code>  This section brings together several important Python data types. You will explore how data can be represented using numerical types, strings, lists and dictionaries, and how these types can be used in simple programs.
-</code></pre>
-<h2 id="g1-overview-and-glossary">G.1 Overview and Glossary</h2>
-<pre><code>      This section will help you utilise some of the common variable types in Python. By the end, you will understand the information that can be stored in numerical types, strings and lists, and how to store, manipulate and extract this information.
-
-      You will also be able to create examples of reals, integers, booleans, lists and strings, and describe their key properties. This will allow you to use appropriate data types in appropriate situations and write more efficient and advanced code.
-
-    ## Learning Outcomes
-
-    By the end of this section, you will be able to:
-
-      - Understand the information that can be stored in numerical types, strings, lists, and dictionaries.
-
-      - Create examples of integers, floats, booleans, strings, lists, and dictionaries.
-
-      - Manipulate and extract information from common Python data types.
-
-      - Describe the key properties of common Python types.
-
-      - Select appropriate data types for different coding tasks.
-
-      Throughout this section, you will notice the use of key terms. Use the glossary below to check any definition you are unsure of.
-
-        **Type**
-        A blueprint for a specific type of data which can be stored in your computer. Also known as a class.
-
-        **Class**
-        A blueprint for a specific type of data which can be stored in your computer. Also known as a type.
-
-        **Object**
-        A specific example of a type that has been created and exists in memory. Also known as an instance.
-
-        **Instance**
-        A specific example of a type that has been created and exists in memory. Also known as an object.
-
-        **Int**
-        A Python type designed to store whole numbers or integers.
-
-        **Float**
-        A Python type designed to store numbers which may not be whole.
-
-        **String**
-        A Python type designed to store a collection of characters in a specified order, such as a word or phrase.
-
-        **Index**
-        The value used to reference a particular value in a collection such as a string or list.
-
-        **List**
-        A Python type designed to store values of any mixture of types in a specified order.
-
-      Let’s get started. In the next activity, we learn more about types.
-</code></pre>
-<h2 id="g2-types">G.2 Types</h2>
-<pre><code>      In this activity, you will learn more about types. In Python, every value, expression and variable is an object. An object is an example or instance of a particular type or class of data.
-
-      You may think of a type as a blueprint for an instance of that type. This describes how Python should store the data associated with an instance of that type and what features and behaviours the instance will have.
-</code></pre>
-<h2 id="python-code-examples_1">Python Code Examples</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Example 1</span>
-<span class="c1"># The result of an expression will be an object, which is an example of a particular type</span>
-<span class="c1">#The &quot;type&quot; function returns the name of the type</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">3</span><span class="p">))</span>
-
-<span class="c1"># Example 2</span>
-<span class="c1">#The value associated with a variable will have a type</span>
-<span class="n">a</span> <span class="o">=</span> <span class="mf">1.1</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
-
-<span class="c1"># Example 3</span>
-<span class="c1">#We can also find the type of a value</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s2">&quot;words&quot;</span><span class="p">))</span>
-</code></pre></div>
-<pre><code>      In the next activity, we look at how to identify and use numerical types.
-</code></pre>
-<h2 id="g3-numerical-types">G.3 Numerical Types</h2>
-<pre><code>      There are three types of numeric variables in Python: integers, floats and complex numbers. In this activity, we look at integers and reals. For those who are interested, there is also an extension section on complex numbers.
-</code></pre>
-<h2 id="exercise-1-numerical-types">Exercise 1: Numerical Types</h2>
-<p>In this exercise, you will have a chance to write and test your own code. Please use Anaconda to complete the exercise.</p>
-<p>Run your code and save the file. You may also want to make note of the steps you followed, the results you had and any errors.</p>
-<h2 id="python-code-examples_2">Python Code Examples</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Example 1</span>
-<span class="c1"># Integers are specified and printed without a decimal point and must be whole numbers</span>
-<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
-
-<span class="c1"># Example 2</span>
-<span class="c1"># Floats are specified and printed with a decimal point</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mf">3.1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
-
-<span class="c1"># Example 3</span>
-<span class="c1"># Floats may be whole numbers</span>
-<span class="n">c</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.0</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
-
-<span class="c1"># Example 4</span>
-<span class="c1"># Division will return a float, even if the values it operates on are both integers</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">4</span> <span class="o">/</span> <span class="mi">3</span><span class="p">)</span>
-
-<span class="c1"># Example 5</span>
-<span class="c1"># Adding two ints returns an int</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
-
-<span class="c1"># Example 6</span>
-<span class="c1"># Adding two floats returns a float</span>
-<span class="nb">print</span><span class="p">(</span><span class="mf">3.0</span> <span class="o">+</span> <span class="mf">1.0</span><span class="p">)</span>
-
-<span class="c1"># Example 7</span>
-<span class="c1"># Adding an int and a float returns a float</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mf">1.5</span><span class="p">)</span>
-
-<span class="c1"># Example 8</span>
-<span class="c1">#The float function returns a float version of the value in parentheses</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
-
-<span class="c1"># Example 9</span>
-<span class="c1"># The int function returns the value in parentheses rounded toward zero to the nearest integer</span>
-<span class="n">d</span> <span class="o">=</span> <span class="mf">2.6</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">d</span><span class="p">))</span>
-
-<span class="c1"># Example 10</span>
-<span class="c1"># Operating on a variable does not change its value</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
-
-<span class="c1"># Example 11</span>
-<span class="c1"># The round function rounds to the nearest whole number</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">d</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
-</code></pre></div>
-<h2 id="sample-exercise-solution">Sample Exercise Solution</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Solution Cell 1</span>
-<span class="c1"># Specify my_number. Set the value to -3.6 for the last part of the exercise</span>
-<span class="n">my_number</span> <span class="o">=</span> <span class="mf">10.8</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_number</span><span class="p">)</span>
-
-<span class="c1"># Use  the int function to create round_down</span>
-<span class="n">round_down</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">my_number</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">round_down</span><span class="p">)</span>
-
-<span class="c1"># Use the round function to round to the nearest integer</span>
-<span class="n">round_nearest</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">my_number</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">round_nearest</span><span class="p">)</span>
-
-<span class="c1"># Use the float function to make a float from round_nearest</span>
-<span class="n">new_float</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">round_nearest</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">new_float</span><span class="p">)</span>
-</code></pre></div>
-<pre><code>      In the next activity, we look at what a string is and use it within Jupyter Notebooks.
-</code></pre>
-<h2 id="g4-strings">G.4 Strings</h2>
-<pre><code>      A string is a collection of characters. In this activity, we explore strings in more detail, including how they can be created, stored, manipulated and accessed in Python.
-</code></pre>
-<h2 id="exercise-2-strings">Exercise 2: Strings</h2>
-<p>In this exercise, you will have a chance to write and test your own code. Please use Anaconda to complete the exercise.</p>
-<p>Run your code and save the file. You may also want to make note of the steps you followed, the results you had and any errors.</p>
-<h2 id="python-code-examples_3">Python Code Examples</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Example 1</span>
-<span class="n">string1</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>
-<span class="n">string2</span> <span class="o">=</span> <span class="s2">&quot;is my favourite language&quot;</span>
-
-<span class="n">first_string</span> <span class="o">=</span> <span class="n">string1</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">first_string</span><span class="p">)</span>
-
-<span class="n">second_string</span> <span class="o">=</span> <span class="n">string2</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">second_string</span><span class="p">)</span>
-
-<span class="n">third_string</span> <span class="o">=</span> <span class="n">string2</span><span class="p">[:</span><span class="mi">3</span><span class="p">:]</span> <span class="o">+</span> <span class="n">string1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">third_string</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">third_string</span><span class="p">))</span>
-</code></pre></div>
-<h2 id="sample-exercise-solution_1">Sample Exercise Solution</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Solution Cell 1</span>
-<span class="n">string1</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>
-<span class="n">string2</span> <span class="o">=</span> <span class="s2">&quot;is my favourite language&quot;</span>
-
-<span class="c1"># The third character from the end of the string is selected</span>
-<span class="n">first_string</span> <span class="o">=</span> <span class="n">string1</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">first_string</span><span class="p">)</span>
-
-<span class="c1"># Every third character beginning with the second character (which has index 1) is returned</span>
-<span class="c1"># This sampling finishes just before the character with index 10 (the &quot;u&quot;)</span>
-<span class="n">second_string</span> <span class="o">=</span> <span class="n">string2</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">second_string</span><span class="p">)</span>
-
-<span class="c1"># The sampled range runs from the start of the string until just before the character with index three</span>
-<span class="c1"># Every character in the range is sampled</span>
-<span class="n">third_string</span> <span class="o">=</span> <span class="n">string2</span><span class="p">[:</span><span class="mi">3</span><span class="p">:]</span> <span class="o">+</span> <span class="n">string1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">third_string</span><span class="p">)</span>
-
-<span class="c1">#There are nine characters in the string (including the space)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">third_string</span><span class="p">))</span>
-
-<span class="c1"># Solution Cell 2</span>
-<span class="c1"># Create the string to work with</span>
-<span class="n">my_string</span> <span class="o">=</span> <span class="s2">&quot;Python is fun&quot;</span>
-
-<span class="c1"># Solution Cell 3</span>
-<span class="c1">#The first character has index zero</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_string</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-
-<span class="c1"># Solution Cell 4</span>
-<span class="c1"># Leaving the first value in square brackets blank means we sample from the start of the string</span>
-<span class="c1"># Selecting 3 as the stop value means the sampled range has indices 0, 1, 2</span>
-<span class="c1"># Leaving out the step value means every value in this range is sampled</span>
-<span class="n">start_string</span> <span class="o">=</span> <span class="n">my_string</span><span class="p">[:</span><span class="mi">3</span><span class="p">:]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">start_string</span><span class="p">)</span>
-
-<span class="c1"># Solution Cell 5</span>
-<span class="c1"># Setting the first value in square brackets to -3 causes the first character of the sampled range to be three characters from the end</span>
-<span class="c1"># Leaving the stop value blank causes the sampled range to run until the end of the string</span>
-<span class="c1"># Leaving the step blank means every character in that range is returned</span>
-<span class="n">end_string</span> <span class="o">=</span> <span class="n">my_string</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">::]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">end_string</span><span class="p">)</span>
-
-<span class="c1"># Solution Cell 6</span>
-<span class="c1"># We join the two strings together with the contaentation operator</span>
-<span class="n">joined_string</span> <span class="o">=</span> <span class="n">start_string</span> <span class="o">+</span> <span class="n">end_string</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">joined_string</span><span class="p">)</span>
-
-<span class="c1"># Solution Cell 7</span>
-<span class="c1"># Setting the first value in square brakcets to 1 causes the first character returned to be the second character of the string</span>
-<span class="c1"># Leaving the stop value blank causes sampling to run until the end of the string</span>
-<span class="c1"># A step of 2 samples every other value in the sampled range</span>
-<span class="n">alternating_string</span> <span class="o">=</span> <span class="n">my_string</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">alternating_string</span><span class="p">)</span>
-</code></pre></div>
-<pre><code>      In the next activity, we look at how to identify and use lists.
-</code></pre>
-<h2 id="g5-lists">G.5 Lists</h2>
-<pre><code>      In this activity, you will learn more about lists. Lists are another common type in Python. Like a string, a list is a sequence, meaning it is an ordered collection of values.
-</code></pre>
-<h2 id="exercise-3-lists">Exercise 3: Lists</h2>
-<p>In this exercise, you will have a chance to write and test your own code. Please use Anaconda to complete the exercise.</p>
-<p>Run your code and save the file. You may also want to make note of the steps you followed, the results you had and any errors.</p>
-<h2 id="python-code-examples_4">Python Code Examples</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Example 1</span>
-<span class="c1"># Create a list using square brackets</span>
-<span class="n">new_list</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">new_list</span><span class="p">)</span>
-
-<span class="c1"># Example 2</span>
-<span class="c1"># We can give a list values when we create it</span>
-<span class="n">shopping_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apples&quot;</span><span class="p">,</span> <span class="s2">&quot;bananas&quot;</span><span class="p">,</span> <span class="s2">&quot;bread&quot;</span><span class="p">,</span> <span class="s2">&quot;mushrooms&quot;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">)</span>
-
-<span class="c1"># Example 3</span>
-<span class="c1"># We can access items in a list in the same way as we did for strings</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-
-<span class="c1"># Example 4</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-
-<span class="c1"># Example 5</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span>
-
-<span class="c1"># Example 6</span>
-<span class="c1"># This syntax changes the value stored in the list with a specified index to a new value</span>
-<span class="n">shopping_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;tomatoes&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">)</span>
-
-<span class="c1"># Example 7</span>
-<span class="c1"># This syntax appends a new value to the end of the list, extending it</span>
-<span class="n">shopping_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;grapes&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">)</span>
-
-<span class="c1"># Example 8</span>
-<span class="c1"># This syntax inserts a new value into a list at a specified location</span>
-<span class="c1"># Displaced values will be shifted to the right (i.e. their index will be increased by one)</span>
-<span class="n">shopping_list</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;lettuce&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">)</span>
-
-<span class="c1"># Example 9</span>
-<span class="c1"># The &quot;len&quot; function tells us the number of entries in the list</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">))</span>
-
-<span class="c1"># Example 10</span>
-<span class="c1"># The plus sign will concatenate two lists to form a new list</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">shopping_list</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;turnips&quot;</span><span class="p">,</span> <span class="s2">&quot;beetroot&quot;</span><span class="p">])</span>
-</code></pre></div>
-<h2 id="sample-exercise-solution_2">Sample Exercise Solution</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Solution Cell 1</span>
-<span class="c1"># Create the list with its initial values</span>
-<span class="n">cuddly_animals</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;rabbit&quot;</span><span class="p">,</span> <span class="s2">&quot;hamster&quot;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">cuddly_animals</span><span class="p">)</span>
-
-<span class="c1"># Solution Cell 2</span>
-<span class="c1"># USe the append method to add the string &quot;rat&quot; to the end of the list</span>
-<span class="n">cuddly_animals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;rat&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">cuddly_animals</span><span class="p">)</span>
-
-<span class="c1"># Solution Cell 3</span>
-<span class="c1"># Use the insert method to insert &quot;chinchilla&quot; at the start of the list</span>
-<span class="c1"># Subsequent items in the list are shifted to the right</span>
-<span class="n">cuddly_animals</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;chinchilla&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">cuddly_animals</span><span class="p">)</span>
-
-<span class="c1"># Solution Cell 4</span>
-<span class="c1"># Change the value of the second item in the list to &quot;ferret&quot;</span>
-<span class="n">cuddly_animals</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;ferret&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">cuddly_animals</span><span class="p">)</span>
-
-<span class="c1"># Solution Cell 5</span>
-<span class="c1"># When we try to print the item from the list with index 99 we get an error</span>
-<span class="c1"># This is because the list is not large enough for any item to have an index of 99</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">cuddly_animals</span><span class="p">[</span><span class="mi">99</span><span class="p">])</span>
-
-<span class="c1"># Solution Cell 6</span>
-<span class="c1"># When we try to assign to the item in the list with an index of 99 we get an error</span>
-<span class="c1"># This is because the list is not large enough for any item to have an index of 99</span>
-<span class="n">cuddly_animals</span><span class="p">[</span><span class="mi">99</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;gerbil&quot;</span>
-</code></pre></div>
-<pre><code>      In the next extension activity, we look at how to recognise complex numbers.
-</code></pre>
-<h2 id="g6-extension-dictionaries">G.6 Extension: Dictionaries</h2>
-<pre><code>      By the end of this activity, you will know how to create dictionaries and how to use their basic functions. Dictionaries are useful when information is naturally organised as key-value pairs.
-</code></pre>
-<h2 id="exercise-4-dictionaries">Exercise 4: Dictionaries</h2>
-<p>In this exercise, you will have a chance to write and test your own code. Please use Anaconda to complete the exercise.</p>
-<p>Run your code and save the file. You may also want to make note of the steps you followed, the results you had and any errors.</p>
-<h2 id="python-code-examples_5">Python Code Examples</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Example 1</span>
-<span class="c1"># Create a dictionary and give it some initial values</span>
-<span class="c1"># Create a dictionary with curly brackets</span>
-<span class="c1"># Key-value pairs and specified and separated by commas</span>
-<span class="c1"># Each key value-pair contains a colon which separates the key and the value</span>
-<span class="n">atomic_numbers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;H&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;He&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">}</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">atomic_numbers</span><span class="p">)</span>
-
-<span class="c1"># Example 2</span>
-<span class="c1">#We can add a new value by inserted the key in square brackets and using item assignment</span>
-<span class="n">atomic_numbers</span><span class="p">[</span><span class="s2">&quot;Li&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">atomic_numbers</span><span class="p">)</span>
-
-<span class="c1"># Example 3</span>
-<span class="c1"># We can also use item assignment to change an existing value</span>
-<span class="n">atomic_numbers</span><span class="p">[</span><span class="s2">&quot;H&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">atomic_numbers</span><span class="p">)</span>
-
-<span class="c1"># Example 4</span>
-<span class="c1"># We can access inidividual items from a dictionary by placing the key in square brackets after the name of the dictionary variable</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">atomic_numbers</span><span class="p">[</span><span class="s2">&quot;He&quot;</span><span class="p">])</span>
-</code></pre></div>
-<pre><code>      In the next activity, you have the chance to test your learning with a quiz.
-</code></pre>
-<h2 id="h-pandas">H. Pandas</h2>
-<pre><code>  This section introduces **pandas**, one of the main Python libraries for working with structured datasets. Pandas is especially useful when data are organised in tables, such as CSV files, spreadsheets, financial datasets, or survey data.
-
-  The material is organised into a short sequence: first, we introduce DataFrames using toy data; then we load and inspect a real dataset; after that, we access, modify and filter data; finally, we practise these skills and introduce more advanced DataFrame operations.
-
-    ## Learning Focus
-
-    By the end of this section, you should be able to:
-
-      - Explain the purpose of pandas in Python data analysis.
-
-      - Create and inspect basic DataFrames.
-
-      - Load a CSV file into pandas.
-
-      - Access rows, columns and summary information.
-
-      - Modify, filter and transform tabular data.
-
-      - Recognise how pandas supports more advanced empirical analysis.
-</code></pre>
-<h2 id="h1-pandas-and-dataframes">H.1 Pandas and DataFrames</h2>
-<pre><code>      Pandas provides data analysis and statistical functionality in Python. It is designed for working with structured data, especially data arranged in rows and columns.
-
-      The central object introduced here is the **DataFrame**. A DataFrame can be thought of as a spreadsheet-like table: it has rows, columns, column names, and values that can be inspected, summarised and transformed.
-
-      This part begins with toy data so that the main ideas are clear before moving on to a real dataset.
-</code></pre>
-<h2 id="python-code-examples-creating-and-inspecting-dataframes">Python Code Examples: Creating and Inspecting DataFrames</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Example 1</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-
-<span class="c1"># Example 2</span>
-<span class="c1"># # Here we generate some toy data. We will explore the numpy package later</span>
-<span class="c1"># # but for now, just know we are use it to generate some random data.</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-
-<span class="c1"># # We fix the seed so that the results are reproducible.</span>
-<span class="c1"># # Please do not change this code.</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
-<span class="c1"># # Generate some toy data (sampled from a Gaussian distribution)</span>
-<span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-
-<span class="c1"># Example 3</span>
-<span class="c1"># # Let&#39;s use the data that we created above to create a DataFrame.</span>
-<span class="n">dataframe</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">values</span><span class="p">)</span>
-
-<span class="c1"># Example 4</span>
-<span class="c1"># # Let&#39;s inspect our dataframe.</span>
-<span class="c1"># # For instance, you can get the shape of the dataframe, to see its dimensions.</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dataframe</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-
-<span class="c1"># # Some pandas methods have the same names as in standard Python, such as</span>
-<span class="c1"># # max, min, and sum. Other common methods are the median, mean, and std</span>
-<span class="c1"># # (standard deviation) methods.</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dataframe</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
-
-<span class="c1"># # The max value should be 2.45. But notice the result is not a simple value</span>
-<span class="c1"># # but a pandas data &quot;series&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Result type:&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">dataframe</span><span class="o">.</span><span class="n">max</span><span class="p">()))</span>
-
-<span class="c1"># # To get only the max value without the additional information, you</span>
-<span class="c1"># # could do:</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dataframe</span><span class="o">.</span><span class="n">max</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
-
-<span class="c1"># Example 5</span>
-<span class="c1"># Change the next line so that min_elem_df contains the min</span>
-<span class="c1"># element of dataframe.</span>
-<span class="c1"># The expected result is ONLY the min value.</span>
-<span class="n">min_elem_df</span> <span class="o">=</span> <span class="o">...</span>
-
-<span class="c1"># Change the next line so that mean_elem_df contains the mean</span>
-<span class="c1"># element of dataframe.</span>
-<span class="c1"># The expected result is ONLY the mean value.</span>
-<span class="n">mean_elem_df</span> <span class="o">=</span> <span class="o">...</span>
-
-<span class="c1"># Example 6</span>
-<span class="c1"># Please do not modify the line below (allows us to replicate the results).</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
-
-<span class="c1"># The lines below concern part C of Question 1.</span>
-<span class="c1"># Modify the line below so that it creates the dataframe of 10k elements</span>
-<span class="c1"># as mentioned in the description (part C above).</span>
-<span class="n">dataframe_10k</span> <span class="o">=</span> <span class="o">...</span>
-
-<span class="c1"># Change the next line so that mean_10k contains the mean</span>
-<span class="c1"># element of dataframe_10k.</span>
-<span class="n">mean_10k</span> <span class="o">=</span> <span class="o">...</span>
-
-<span class="c1"># Example 7</span>
-<span class="c1"># Test cell; please do not change!</span>
-<span class="n">_</span> <span class="o">=</span> <span class="n">ok</span><span class="o">.</span><span class="n">grade</span><span class="p">(</span><span class="s1">&#39;q1&#39;</span><span class="p">)</span>
-
-<span class="c1"># Example 8</span>
-<span class="n">d1</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">d1</span><span class="p">[</span><span class="s1">&#39;countries&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;UK&#39;</span><span class="p">,</span> <span class="s1">&#39;France&#39;</span><span class="p">,</span> <span class="s1">&#39;Spain&#39;</span><span class="p">,</span> <span class="s1">&#39;Netherlands&#39;</span><span class="p">]</span>
-<span class="n">d1</span><span class="p">[</span><span class="s1">&#39;codes&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;uk&#39;</span><span class="p">,</span> <span class="s1">&#39;fr&#39;</span><span class="p">,</span> <span class="s1">&#39;es&#39;</span><span class="p">,</span> <span class="s1">&#39;nl&#39;</span><span class="p">]</span>
-<span class="c1"># # the population is measured in millions</span>
-<span class="n">d1</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mf">65.6</span><span class="p">,</span> <span class="mf">66.9</span><span class="p">,</span> <span class="mf">46.6</span><span class="p">,</span> <span class="mf">17.0</span><span class="p">]</span>
-<span class="c1"># # the gdp is measured in billions</span>
-<span class="n">d1</span><span class="p">[</span><span class="s1">&#39;gdp&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2619</span><span class="p">,</span> <span class="mi">2465</span><span class="p">,</span> <span class="mi">1232</span><span class="p">,</span> <span class="mi">770</span><span class="p">]</span>
-
-<span class="c1"># Example 9</span>
-<span class="c1"># # Let&#39;s create a dataframe now with that data.</span>
-<span class="c1"># # DataFrame includes a convenience constructor that</span>
-<span class="c1"># # just accepts the dictionary data and creates</span>
-<span class="c1"># # the same structure as in the previous example.</span>
-<span class="n">countries_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">d1</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">countries_data</span><span class="p">[</span><span class="s1">&#39;gdp&#39;</span><span class="p">])</span>
-<span class="n">countries_data</span> <span class="c1"># Notebook gives a nice HTML table of the dataframe</span>
-
-<span class="c1"># Example 10</span>
-<span class="c1"># # Additionally, we can call the aggregation methods as above, but now we get</span>
-<span class="c1"># # a result per column (which makes sense, we do not want to average</span>
-<span class="c1"># # gdps together with populations). Set numeric_only to True to avoid errors.</span>
-<span class="n">countries_data</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">numeric_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="c1"># Example 11</span>
-<span class="c1"># Change the next line so that sum_pop_countries_data computes the sum of</span>
-<span class="c1"># the populations from countries_data, rounded to one decimal.</span>
-<span class="n">sum_pop_countries_data</span> <span class="o">=</span> <span class="o">...</span>
-
-<span class="c1"># Change the next line so that std_gdp_countries_data computes the standard deviation of</span>
-<span class="c1"># the gdp from countries_data, rounded to one decimal.</span>
-<span class="n">std_gdp_countries_data</span> <span class="o">=</span> <span class="o">...</span>
-
-<span class="c1"># Example 12</span>
-<span class="c1"># Test cell; please do not change!</span>
-<span class="n">_</span> <span class="o">=</span> <span class="n">ok</span><span class="o">.</span><span class="n">grade</span><span class="p">(</span><span class="s1">&#39;q2&#39;</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="h2-loading-and-inspecting-data">H.2 Loading and Inspecting Data</h2>
-<pre><code>      Once you understand the basic DataFrame structure, the next step is to load data from an external file. In practice, much of data analysis begins by importing a dataset and checking its structure.
-
-      This part introduces loading a CSV file, inspecting rows and columns, viewing summary statistics, and producing a simple plot directly from pandas.
-</code></pre>
-<h2 id="python-code-examples-loading-and-inspecting-data">Python Code Examples: Loading and Inspecting Data</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Example 1</span>
-<span class="c1"># # Let&#39;s load the first csv file.</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/titanic.csv&#39;</span><span class="p">)</span>
-
-<span class="c1"># # Printing the shape of the dataset we have just loaded.</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-
-<span class="c1"># # The first step in data analysis is the exploration step.</span>
-<span class="c1"># # We want to verify that a) our dataset is appropriately loaded,</span>
-<span class="c1"># # b) get a sense of what values it has.</span>
-<span class="c1"># # Let&#39;s display the 5 first rows:</span>
-<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="c1"># # (When we run this in the Notebook, we will get a nice</span>
-<span class="c1"># #  HTML representation of the table.)</span>
-
-<span class="c1"># Example 2</span>
-<span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
-
-<span class="c1"># Example 3</span>
-<span class="c1"># # Pandas also allow us to plot values directly.</span>
-<span class="c1"># # Let&#39;s plot a histogram of the age of the passengers</span>
-<span class="c1"># # pandas can create plots using a package called matplotlib</span>
-<span class="c1"># # (matplotlib must be installed in your environment)</span>
-<span class="n">data</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;Age&#39;</span><span class="p">)</span>
-
-<span class="c1"># Example 4</span>
-<span class="c1"># Change the next line so that age_passenger_10 computes the age of</span>
-<span class="c1"># the 10th passenger.</span>
-<span class="n">age_passenger_10</span> <span class="o">=</span> <span class="o">...</span>
-
-<span class="c1"># Change the next line so that cabin_194_passenger computes the</span>
-<span class="c1"># cabin number of the 194th passenger.</span>
-<span class="n">cabin_194_passenger</span> <span class="o">=</span> <span class="o">...</span>
-
-<span class="c1"># Example 5</span>
-<span class="c1"># Test cell; please do not change!</span>
-<span class="n">_</span> <span class="o">=</span> <span class="n">ok</span><span class="o">.</span><span class="n">grade</span><span class="p">(</span><span class="s1">&#39;q3&#39;</span><span class="p">)</span>
-
-<span class="c1"># Example 6</span>
-<span class="c1"># Change the next line so that it computes ticket number/id of</span>
-<span class="c1"># the 100th passenger</span>
-<span class="n">ticket_i_th_passenger</span> <span class="o">=</span> <span class="o">...</span>
-
-<span class="c1"># We&#39;ve put this line in this cell so that it will print</span>
-<span class="c1"># the value you&#39;ve given to ticket_i_th_passenger when you</span>
-<span class="c1"># run it.  You don&#39;t need to change this.</span>
-<span class="n">ticket_i_th_passenger</span>
-
-<span class="c1"># Example 7</span>
-<span class="c1"># Test cell; please do not change!</span>
-<span class="n">_</span> <span class="o">=</span> <span class="n">ok</span><span class="o">.</span><span class="n">grade</span><span class="p">(</span><span class="s1">&#39;q4&#39;</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="h3-accessing-modifying-and-filtering-data">H.3 Accessing, Modifying and Filtering Data</h2>
-<pre><code>      After loading a dataset, you often need to access specific rows, extract columns, remove unnecessary data, replace values, or create new variables. These operations are central to preparing data for analysis.
-
-      This part focuses on indexing, column selection, dropping rows or columns, replacing values, inserting new fields, and filtering observations that meet specific conditions.
-</code></pre>
-<h2 id="python-code-examples-accessing-and-modifying-data">Python Code Examples: Accessing and Modifying Data</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Example 1</span>
-<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-
-<span class="c1"># Example 2</span>
-<span class="c1"># # Let&#39;s delete the first and the third</span>
-<span class="c1"># # passengers (remember the indexing in</span>
-<span class="c1"># # python starts from 0).</span>
-<span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-
-<span class="c1"># Example 3</span>
-<span class="c1"># # Apart from that, you can also delete whole columns or rows.</span>
-<span class="c1"># # For instance, for your problem, the Cabin column might be</span>
-<span class="c1"># # irrelevant, let&#39;s delete it.</span>
-<span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Cabin&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-
-<span class="c1"># Example 4</span>
-<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-
-<span class="c1"># Example 5</span>
-<span class="c1"># # Let&#39;s check that the data type is the same.</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
-<span class="c1"># # What about the return type from a drop operation?</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Cabin&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)))</span>
-
-<span class="c1"># Example 6</span>
-<span class="c1"># Change the next line so that it computes the reduced data matrix.</span>
-<span class="n">reduced_data</span> <span class="o">=</span> <span class="o">...</span>
-
-<span class="c1"># We&#39;ve put this line in this cell so that it will print</span>
-<span class="c1"># the value you&#39;ve given to reduced_data when you</span>
-<span class="c1"># run it.  You don&#39;t need to change this.</span>
-<span class="n">reduced_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-
-<span class="c1"># Example 7</span>
-<span class="c1"># Test cell; please do not change!</span>
-<span class="n">_</span> <span class="o">=</span> <span class="n">ok</span><span class="o">.</span><span class="n">grade</span><span class="p">(</span><span class="s1">&#39;q5&#39;</span><span class="p">)</span>
-
-<span class="c1"># Example 8</span>
-<span class="n">data</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;male&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-
-<span class="c1"># Example 9</span>
-<span class="c1"># # An alternative way to replace the data is the following:</span>
-<span class="n">data</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="s1">&#39;female&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;male&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">})</span>
-
-<span class="c1"># Example 10</span>
-<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-
-<span class="c1"># Example 11</span>
-<span class="c1"># # Right after the Sex, we want to include a new field named &#39;Nationality&#39;.</span>
-<span class="c1"># # Since most of the passengers are Irish, we will by default assign</span>
-<span class="c1"># # the label &#39;Irish&#39; to them and refine for those that are not.</span>
-<span class="n">data</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;Nationality&#39;</span><span class="p">,</span> <span class="s1">&#39;Irish&#39;</span><span class="p">)</span>
-
-<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-
-<span class="c1"># Example 12</span>
-<span class="c1"># # Let&#39;s assume for a moment that the nationality of</span>
-<span class="c1"># # those with Age NaN is Other European (hence why there</span>
-<span class="c1"># # are no records of their age).</span>
-<span class="c1"># # We want to replace the default nationality with</span>
-<span class="c1"># # their known nationality.</span>
-
-<span class="c1"># # Don&#39;t worry about how this works for now, it will be clear when we cover numpy.</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s2">&quot;Age&quot;</span><span class="p">]):</span>
-        <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s2">&quot;Nationality&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;European&quot;</span>
-
-<span class="c1"># Example 13</span>
-<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-
-<span class="c1"># Example 14</span>
-<span class="c1"># # What we&#39;ve done above is to replace some of the nationalities with &#39;European&#39;.</span>
-<span class="c1"># # One property of pandas that we&#39;ve utilised for that is the &#39;.loc&#39;.</span>
-<span class="c1"># # Let&#39;s explore that a bit more:</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
-
-<span class="c1"># Example 15</span>
-<span class="c1"># # As typically done in higher level libraries in python, &#39;.loc&#39; offers a great deal of functionality.</span>
-<span class="c1"># # You can find furthr information by executing data.loc??</span>
-<span class="n">help</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">)</span>
-
-<span class="c1"># Example 16</span>
-<span class="n">european_bool</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Nationality&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;European&#39;</span> <span class="c1"># creates Booleans for each entry</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">european_bool</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-<span class="c1"># We could then pick only these records with</span>
-<span class="n">europeans</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">european_bool</span><span class="p">]</span>
-<span class="c1"># If we want to count different values, we can do</span>
-<span class="n">data</span><span class="p">[</span><span class="s1">&#39;Nationality&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-<span class="c1"># Counting how many non null values exist would be data[&#39;Nationality&#39;].count()</span>
-</code></pre></div>
-<h2 id="h4-practice-and-titanic-extension">H.4 Practice and Titanic Extension</h2>
-<pre><code>      This part provides additional practice using the Titanic dataset. The aim is to reinforce core pandas skills by asking you to compute values, subset data, and apply the earlier tools to a more realistic dataset.
-
-      Treat these examples as an opportunity to experiment. Run the code, inspect each output, and adjust small parts of the commands to test your understanding.
-</code></pre>
-<h2 id="python-code-examples-optional-practice">Python Code Examples: Optional Practice</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Example 1</span>
-<span class="c1"># Change the next line so that it computes the number of</span>
-<span class="c1"># people with European nationality.</span>
-<span class="n">n_european</span> <span class="o">=</span> <span class="o">...</span>
-
-<span class="c1"># Change the next line so that it computes the number of</span>
-<span class="c1"># people for which we have cabin information.</span>
-<span class="n">n_passengers_cabin</span> <span class="o">=</span> <span class="o">...</span>
-
-<span class="c1"># Example 2</span>
-<span class="c1"># Test cell; please do not change!</span>
-<span class="n">_</span> <span class="o">=</span> <span class="n">ok</span><span class="o">.</span><span class="n">grade</span><span class="p">(</span><span class="s1">&#39;q6&#39;</span><span class="p">)</span>
-
-<span class="c1"># Example 3</span>
-<span class="c1"># Change the next line so that it computes a new dataframe</span>
-<span class="c1"># that includes only the people with Pclass = 2.</span>
-<span class="c1"># One way to use conditions in pandas is directly with data[CONDITION]</span>
-<span class="n">only_pclass2</span> <span class="o">=</span> <span class="o">...</span>
-
-<span class="c1"># We&#39;ve put this line in this cell so that it will print</span>
-<span class="c1"># the value you&#39;ve given to only_pclass2 when you</span>
-<span class="c1"># run it.  You don&#39;t need to change this.</span>
-<span class="n">only_pclass2</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-
-<span class="c1"># Example 4</span>
-<span class="c1"># Test cell; please do not change!</span>
-<span class="n">_</span> <span class="o">=</span> <span class="n">ok</span><span class="o">.</span><span class="n">grade</span><span class="p">(</span><span class="s1">&#39;q7&#39;</span><span class="p">)</span>
-
-<span class="c1"># Example 5</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-
-<span class="c1"># Example 6</span>
-<span class="c1"># Reads the file titanic.csv</span>
-<span class="n">data_org</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/titanic.csv&#39;</span><span class="p">)</span>
-
-<span class="c1"># Reads the file nationalities.csv</span>
-<span class="n">data_nat</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/nationalities.csv&#39;</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="h5-advanced-dataframe-processing">H.5 Advanced DataFrame Processing</h2>
-<pre><code>      The final part introduces more advanced DataFrame workflows. These include combining datasets, selecting data conditionally, applying transformations, and carrying out grouped calculations.
-
-      These techniques are widely used in empirical finance, economics, and data science because real datasets often need to be merged, cleaned and transformed before analysis.
-</code></pre>
-<h2 id="python-code-examples-advanced-dataframe-processing">Python Code Examples: Advanced DataFrame Processing</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Example 1</span>
-<span class="c1"># # First, let&#39;s ensure that the two datasets have the same number of elements (passenger data).</span>
-<span class="k">assert</span> <span class="n">data_org</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">data_nat</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-
-<span class="c1"># Example 2</span>
-<span class="c1"># # Let&#39;s print the heads of the two datasets to figure out if there are any common elements.</span>
-<span class="n">data_org</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-
-<span class="c1"># Example 3</span>
-<span class="n">data_nat</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-
-<span class="c1"># Example 4</span>
-<span class="c1"># # We are ready to perform the merging. Observe that the datasets share a common column in</span>
-<span class="c1"># # the PassengerId, so we will use it to combine the data.</span>
-<span class="n">data_new</span> <span class="o">=</span> <span class="n">data_org</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">data_nat</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;PassengerId&#39;</span><span class="p">)</span>
-
-<span class="c1"># # Let&#39;s see what we&#39;ve created now.</span>
-<span class="n">data_new</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-
-<span class="c1"># Example 5</span>
-<span class="c1"># # Pandas offers several convenient methods for conditional selection and actions on them.</span>
-<span class="c1"># # For instance, above we worked on getting useful aggregate statistics</span>
-<span class="c1"># # over the whole dataset (do you remember the commands?).</span>
-<span class="c1"># # However, often we&#39;d like to select only a subset of the data based on some condition.</span>
-<span class="c1"># # For instance, let&#39;s say we would like to print the average age per class.</span>
-<span class="c1"># # One way to do that would be to iterate over all the elements, create a list, sum them</span>
-<span class="c1"># # and then compute the average.</span>
-<span class="c1"># # But pandas conveniently allows us to do it with a single command.</span>
-<span class="c1"># # It works as follows:</span>
-<span class="c1"># # First we group the data by the class, then we ask pandas to compute the mean of the age.</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data_new</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Pclass&#39;</span><span class="p">])[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-
-<span class="c1"># Example 6</span>
-<span class="c1"># # In the command above, we&#39;ve averaged both men and women based only on the Pclass.</span>
-<span class="c1"># # However, we could separate the two sexes and compute the mean for each sex.</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data_new</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Pclass&#39;</span><span class="p">,</span> <span class="s1">&#39;Sex&#39;</span><span class="p">])[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-
-<span class="c1"># Example 7</span>
-<span class="c1"># # We will now drop few columns that contain strings to mention few methods for statistical processing.</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">data_new</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Cabin&#39;</span><span class="p">,</span> <span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Ticket&#39;</span><span class="p">,</span> <span class="s1">&#39;Embarked&#39;</span><span class="p">,</span> <span class="s1">&#39;Nationality&#39;</span><span class="p">,</span> <span class="s1">&#39;Sex&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-
-<span class="c1"># Example 8</span>
-<span class="c1"># # We can for example &quot;clip&quot; the values, i.e. restrict them in a chosen interval.</span>
-<span class="c1"># # Notice that some values were greater than our upper bound, but are now</span>
-<span class="c1"># # restricted to the maximum upper bound we set.</span>
-<span class="n">data</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">lower</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">upper</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-
-<span class="c1"># Example 9</span>
-<span class="c1"># # If the method we would like to apply to the data does not exist, we can use the</span>
-<span class="c1"># # &#39;.apply&#39; method that allows us to choose any function to be applied to each record.</span>
-<span class="c1"># # One way to do this is through an &quot;anonymous&quot; lambda function.</span>
-<span class="c1"># # This works as defining a function without an explicit name to apply to each record</span>
-<span class="n">data</span><span class="p">[</span><span class="s2">&quot;SurvivedPlusOne&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;Survived&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</code></pre></div>
-
-
+<p>Data rarely arrives in a form that's immediately useful. Before any meaningful analysis can happen, information first has to be stored in an appropriate variable, organised into the right data structure, and, for anything beyond a handful of values, handled through tools built specifically for speed and scale rather than one value at a time. This is exactly the progression this session follows: individual variables and data types first, then NumPy's fast, uniform arrays for numerical work, and finally pandas' labelled, tabular DataFrames for genuinely realistic, mixed-type datasets.</p>
+<p>The purpose of this session isn't just to introduce a long list of new commands, it's to build an intuition for <em>which</em> data type or tool fits a given task, and to recognise how each layer builds directly on the one below it: a pandas DataFrame is a table of NumPy-like columns, and a NumPy array is a faster, stricter version of a Python list. Once that relationship feels natural, choosing the right tool becomes a matter of asking a simple question, rather than remembering an arbitrary rule.</p>
+<p>By the end of the session, moving fluidly between single values, collections, numerical arrays, and full tabular datasets, and knowing which one a given task actually calls for, should feel like a natural and connected skill, rather than a set of separate topics.</p>
+<p>Here is a brief list of key commands frequently used throughout this session.</p>
+<table>
+<thead>
+<tr>
+<th>Motivation</th>
+<th>Section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stores and labels a value in memory using an <strong>assignment statement</strong> (<code>age = 25</code>), the starting point for every Python program, and a habit worth pairing with meaningful, descriptive variable names.</td>
+<td>Variable Assignment</td>
+</tr>
+<tr>
+<td>Checks what kind of data a value actually is using <strong><code>type()</code></strong>, one of the fastest ways to catch a bug before it causes bigger problems further down the code.</td>
+<td>Common Python Data Types</td>
+</tr>
+<tr>
+<td>Creates a fast, uniform grid of numbers using <strong><code>np.array()</code></strong>, the foundation of everything else NumPy offers, trading Python's flexible mixed types for considerably faster numerical computation.</td>
+<td>NumPy Basics</td>
+</tr>
+<tr>
+<td>Generates reproducible "random" values using <strong><code>np.random.seed()</code></strong> alongside <strong><code>np.random.rand()</code></strong>, <strong><code>np.random.randn()</code></strong>, and <strong><code>np.random.normal()</code></strong>, essential for simulation and for results that can be checked or repeated by someone else.</td>
+<td>Random Numbers</td>
+</tr>
+<tr>
+<td>Summarises an array's values using <strong><code>.mean()</code></strong>, <strong><code>.std()</code></strong>, and <strong><code>np.percentile()</code></strong>, with the <code>axis=</code> argument controlling whether the summary runs down columns, across rows, or over the whole array.</td>
+<td>Statistical Operations</td>
+</tr>
+<tr>
+<td>Reshapes and recombines arrays using <strong><code>.reshape()</code></strong>, <strong><code>np.vstack()</code></strong>, and <strong><code>np.hstack()</code></strong>, the everyday tools for preparing numerical data into whatever shape a later calculation or model expects.</td>
+<td>Matrix Manipulation and Data Preparation</td>
+</tr>
+<tr>
+<td>Builds a labelled, spreadsheet-like table using <strong><code>pd.DataFrame()</code></strong>, then inspects it immediately with <strong><code>.head()</code></strong>, <strong><code>.shape</code></strong>, and <strong><code>.describe()</code></strong>, the standard first steps after creating or loading any dataset.</td>
+<td>Pandas</td>
+</tr>
+<tr>
+<td>Selects, changes, or narrows down a dataset using <strong><code>.loc[]</code></strong>, <strong><code>.drop()</code></strong>, and Boolean filtering (<code>data[condition]</code>), the recipe behind almost every row- or column-level operation in pandas.</td>
+<td>Accessing, Modifying and Filtering Data</td>
+</tr>
+<tr>
+<td>Combines two related datasets using <strong><code>.merge()</code></strong>, and summarises data by category using <strong><code>.groupby()</code></strong>, the "split-apply-combine" pattern that underlies most real-world data summaries.</td>
+<td>DataFrame Processing</td>
+</tr>
+<tr>
+<td>Handles the everyday practicalities of real data, missing values with <strong><code>.isna()</code></strong> and <strong><code>.fillna()</code></strong>, precise positional access with <strong><code>.iloc</code></strong>, and saving results with <strong><code>.to_csv()</code></strong>, that come up in almost every genuine analysis.</td>
+<td>Essential Pandas Tools</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -2511,7 +1926,12 @@ By the end of this session, you will have learned how to:
 
 
   
+  
 
+
+
+
+  
 
 
 
@@ -2523,12 +1943,6 @@ By the end of this session, you will have learned how to:
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  Back to top
-</button>
-        
       </main>
       
         <footer class="md-footer">
@@ -2536,6 +1950,10 @@ By the end of this session, you will have learned how to:
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Hormoz Ramian
+    </div>
   
   
 </div>
@@ -2553,16 +1971,10 @@ By the end of this session, you will have learned how to:
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.expand", "navigation.top"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
-      
-        <script src="../../../../javascripts/mathjax.js"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-      
-        <script src="../../../../javascripts/extra.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
