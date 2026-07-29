@@ -1,0 +1,90 @@
+site_name: Hormoz Ramian
+site_url: https://www.hramian.com
+
+theme:
+  name: material
+  logo:
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.expand
+   # - toc.integrate
+    - navigation.top
+
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: "index.md"
+  - Research: "pages/Research/index.md"
+  - Teaching:
+    - "pages/Teaching/index.md"
+    #- Data Science: "pages/Teaching/ds/rp1.md"
+        # - 1. Introduction: "pages/Teaching/ds/rp2.md"
+        # - 2. Data Measurements: "pages/Teaching/ds/p2.md"
+        # - 5. Data Engineering: "pages/Teaching/ds/rp3.md"
+    - Data Science and Machine Learning in Finance: "pages/Teaching/accfin5246.md"
+    - Asset Pricing: "pages/Teaching/accfin5014.md"
+    - Finance Programming in Python and Databases: "pages/Teaching/accfin5277.md"
+    - Entrepreneurial Finance: "pages/Teaching/bus5020.md"
+  - Python: "pages/Teaching/python.md"
+  - Applied Statistical Computing:
+    - Overview: "pages/Teaching/cfr/index.md"
+    - Background: "pages/Teaching/cfr/rp1.md"
+    - Software Environment:
+      - User Interface: "pages/Teaching/cfr/rp2.md"
+      - Variable Types: "pages/Teaching/cfr/rp3.md"
+      - Operators: "pages/Teaching/cfr/rp4.md"
+      - Libraries: "pages/Teaching/cfr/rp5.md"
+    #- Dissertations: "pages/Teaching/dissertations.md"
+  - Financial Simulation: "pages/simulator.md"
+  - CV: "pages/cv.md"
+  #- More: "pages/more.md"
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+  - md_in_html
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/extra.js
+
+plugins:
+  - search
+  - tags
+
+extra:
+  generator: false
+  analytics:
+    provider: google
+    property: G-H3V1WV4Y35
+
+
+
